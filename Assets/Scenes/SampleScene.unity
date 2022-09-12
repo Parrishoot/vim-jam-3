@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 552660228}
   - component: {fileID: 552660227}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: CardsLeftText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -758,6 +758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425786259}
   - component: {fileID: 1425786260}
+  - component: {fileID: 1425786261}
   m_Layer: 0
   m_Name: TurnController
   m_TagString: Untagged
@@ -800,6 +801,19 @@ MonoBehaviour:
   - {fileID: 8181551505721638989, guid: e991b82063304fe4daf00735d3fca183, type: 3}
   - {fileID: 8181551505721638989, guid: f9cefa91b364dd343bd3c783d3175c8b, type: 3}
   handSize: 4
+--- !u!114 &1425786261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425786258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e4afb44fcefba4f86c1e14913e8111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsLeftText: {fileID: 552660227}
 --- !u!1 &1467296752
 GameObject:
   m_ObjectHideFlags: 0

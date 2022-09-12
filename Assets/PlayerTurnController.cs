@@ -7,14 +7,31 @@ public class PlayerTurnController : Singleton<PlayerTurnController>
     public List<GameObject> cards = new List<GameObject>();
     public int handSize = 4;
 
+    private bool drawing = false;
+
     private List<CardController> currentHand = new List<CardController>();
+    private PlayerTurnUIController playerTurnUIController;
+
+    public void Start()
+    {
+        playerTurnUIController = GetComponent<PlayerTurnUIController>();
+    }
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !drawing)
         {
             StartCoroutine(DealCards());
         }
+
+        int pendingCards = GetNumberOfPendingCards();
+        playerTurnUIController.SetText(pendingCards.ToString());
+    }
+
+
+    public int GetNumberOfPendingCards()
+    {
+        return currentHand.FindAll(card => card.IsPending()).Count;
     }
 
     public void DealCard()
@@ -28,7 +45,8 @@ public class PlayerTurnController : Singleton<PlayerTurnController>
 
     public void ClearHand()
     {
-        foreach(CardController cardController in currentHand) {
+        foreach (CardController cardController in currentHand)
+        {
             cardController.Despawn();
         }
 
@@ -37,13 +55,16 @@ public class PlayerTurnController : Singleton<PlayerTurnController>
 
     IEnumerator DealCards()
     {
+        drawing = true;
+
         ClearHand();
 
-        for(int i = 0; i < handSize; i++)
+        for (int i = 0; i < handSize; i++)
         {
             DealCard();
             yield return new WaitForSeconds(1f);
         }
-        yield return null;
+
+        drawing = false;
     }
 }
