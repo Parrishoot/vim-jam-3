@@ -1,0 +1,3918 @@
+fileFormatVersion: 2
+guid: 62deb009943356442aac8e4c93e58100
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: burst.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9af3dc8d5f8c047975128e3e8cef56
+      internalID: 1774309562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40401047b39f2248a3f679e750d1d30
+      internalID: 1529949430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50778bf5e580e614bad20b2b0d5567df
+      internalID: -806215160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0613c0043906754693febcdf46014af
+      internalID: 1962933191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_4
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593a44ab8dd4e8f4f8193a4335d51613
+      internalID: -1241783903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_5
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9377c12a6be03842bd087864fb9a96a
+      internalID: -968194888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_6
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32dd04e3507dfc4b87d5fcd12dd2fd5
+      internalID: 249595982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_7
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2edc91f8ce57d1408c3dbb3d062218c
+      internalID: -617121554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_8
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3227c1b8c81f59d418fdc6eaedd3b341
+      internalID: 234077480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_9
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d109fff0c64e6954aaae756da142b58c
+      internalID: 2027599589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_10
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70eacc2537cc99248b994a6348471d33
+      internalID: 2143075316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_11
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6598490b07279374aa6ff87625e1b43d
+      internalID: 1780356510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_12
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefab311658677b4d9279eda08e094c2
+      internalID: -1709614084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_13
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 5202
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85aa1ce0d87a5794e9e0390354a04f3a
+      internalID: -1408187290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fb5e32830188a42a44773efa797950
+      internalID: 2042569076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_15
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb3716373abb945a9945ae8017fa50
+      internalID: -1756451645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_16
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bb6d6869e9ae8408c1020d59dfba5b
+      internalID: -876578699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_17
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10694ae3e2ece64fb6d0661bcaa1c0a
+      internalID: 1476132487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_18
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38672ea58055bab428b7d37f72cd5045
+      internalID: 1957021002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_19
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa357aef56b2e6d4f82598be72788d52
+      internalID: 811756650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_20
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5803c6416ca8045a3b849ac35461fd
+      internalID: -581756758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_21
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d782c9b6911a26b429573a736a3889f0
+      internalID: -977063796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_22
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842d0990afa344947ac85bf033e87595
+      internalID: -216853862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_23
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33fdb66adea1ec4bb3e4630f8f0dc74
+      internalID: 1243151389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_24
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92489e2ed73132d43bd2c63ef0119444
+      internalID: -1611353680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_25
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fbe14a5c0a27a4d9eedd0d093c4af1
+      internalID: 247430866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_26
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3b5a5f58da6994e9791a38c248882c
+      internalID: -1708366262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_27
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 4803
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb929002a94db58469991acdd5cf6fbc
+      internalID: -718511082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fa11cc54b869244a6d89106a6ad45b
+      internalID: 1581408621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_29
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ee5602da2b9074da3a32dc1119fcd7
+      internalID: -504390783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_30
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4a7695abb312b429d7ce51e68c8efa
+      internalID: 2060260387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_31
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f89e2a69424684cbf35f8c6a35ab48
+      internalID: -978479039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_32
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51b47f88bc8a0b4aabb729b23c3fb62
+      internalID: 1697044078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_33
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cedbba97790e64fa6efc3d16c9c237
+      internalID: -496988164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_34
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49542abe467ddbe4ab1372c20ee00381
+      internalID: 1424894450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_35
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9081ce7fc286f64e8c7a4215343cfcf
+      internalID: 71354558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_36
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f30728d3da165841b544cd04de394f4
+      internalID: 91316439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_37
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d5dc565d41c05468abdbe7181c6f43
+      internalID: -1244984161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_38
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bfe28b47f59184195d3271143892f6
+      internalID: 2125424962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_39
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9871c6ca0843c45af75bf326e70569
+      internalID: -1075903593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_40
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54612f0924da2f64ba09430a85615a04
+      internalID: 170832516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_41
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 4404
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9212b51f0ca4fe94493f909bf6b12931
+      internalID: 294723182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff36afc428fb9f46b1a4b46d72103da
+      internalID: 1961243486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_43
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3995f810984b3f4daf1ffc869112d95
+      internalID: -715575180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_44
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b3d103be1f92446ba73463b2043789
+      internalID: 1378974514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_45
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aaf4cb18cd3134a9918ccb38fee043
+      internalID: 1875490569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_46
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bc6a1b2c48f4049bad8e3592a6630f
+      internalID: -107606260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_47
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29644d9b9b8d9204e80f17fed31560bc
+      internalID: -432504616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_48
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee3b9f78186c2c45bcd8b28c087240b
+      internalID: -676272598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_49
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220a84286c8f771459603e46c88e8e39
+      internalID: -1624806903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_50
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a731b9b2df2a0e4ba73958105531232
+      internalID: -1655230155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_51
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640e4a879cf87774fbb81d5fd169bd91
+      internalID: -1408380343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_52
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36ef8419ad8bfb4cb5dbbbf157021ff
+      internalID: 765710184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_53
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ee3db60e295604b973aa1d79155dd8
+      internalID: 1664235258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_54
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e2bff8b73e6bb4384f60a6f94769d6
+      internalID: -119282016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_55
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 4005
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e7d9f98f8f1fc4da0ffaf61d367203
+      internalID: 191107596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4462654fca8750448798108d2d91c9d
+      internalID: -1539755179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_57
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afefa887e47a6043965c8cbf746d8a1
+      internalID: 1421850566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_58
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a27a2e958b9fca49bbee1140d8f80a6
+      internalID: -1849633880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_59
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce6c5ff8b3704e4886a82487da2989a
+      internalID: -1300879246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_60
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d52fcd4b48775e45b6e19e24439141e
+      internalID: 1567460131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_61
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07673ef3df2cb4f42a9c48a6213b80cc
+      internalID: -1080571683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_62
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ae26f794821124faf07ae2b145e8b7
+      internalID: 1575103344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_63
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cff2bc6cbcff0b47ae024ea49acb3c9
+      internalID: -375962413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_64
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46918b83d01e4b74ea4350d400091eca
+      internalID: -426503953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_65
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b32359ce7824546be8e5817cff7daa
+      internalID: -1143040267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_66
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b41c04192a57ac488f17481c4e0833d
+      internalID: 1344804709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_67
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54468500403861f42baec0a97d525892
+      internalID: 875377280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_68
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f586396b4e0fdbe4ab4002954c7acc1f
+      internalID: 943227641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_69
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 3606
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b94bed9358f7994cbb17624ca11122e
+      internalID: -1760847031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3df7710aa8840341b262aca17e72b37
+      internalID: -1336193480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_71
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1a6b3b8b6ba0c40839b6b0c016dc66
+      internalID: 1990065601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_72
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6ffb68997a95a4f8768c44e7b36c83
+      internalID: -889521538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_73
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d12767360cbe4e8e284d5e3b97e52
+      internalID: -127399942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_74
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfab12112a3543e4c9999e526cbc128e
+      internalID: -1900779519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_75
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dfec2a88755a84b92999b291b4a26f
+      internalID: 364498863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_76
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b9e9039df034e4b928d3244c4e15cc
+      internalID: 333823730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_77
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2898ac9fbe9601641b495d0883be9c9b
+      internalID: -1842846684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_78
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d4c553e634bce4b9137f559fdfc697
+      internalID: 758674666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_79
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2200dbb3274d0742ad652ca2d7d1547
+      internalID: -978313809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_80
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7354c02bba758ec49a89a38074d4fdf8
+      internalID: 1570679538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_81
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073681916d03d2940a0f142a7bb04046
+      internalID: -485909119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_82
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb6c6e8a52262d468d52596371a3c03
+      internalID: -2016935422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_83
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 3207
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbedb0304e836140b56dbdee26c22c2
+      internalID: -1568056109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf2c054ff2201141965422961c96cf6
+      internalID: 1019043560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_85
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fc2246628f31b45abd5ce8e3b6d55e
+      internalID: 523478949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_86
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4ee3b3a81e7374591c9cb2332787ea
+      internalID: -1694705736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_87
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34217701610587f4cb3de717353fa97d
+      internalID: -1856573986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_88
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eedde8bdc1433043ab20c7b9eacea82
+      internalID: 1847809299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_89
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0012c01021a59d44af62d14dd8e7d61
+      internalID: -1366801445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_90
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9f60f725695ae4786055194c748919
+      internalID: 944205883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_91
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bf2d2ecc11f504096e1e144184a2ef
+      internalID: 449418383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_92
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9d9eb9a73c4074a9f73ef1dbf460d6
+      internalID: -1621611086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_93
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435045c6a0babd04585ed72ab59d6b76
+      internalID: 73042924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_94
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d7bbfa6dff7894b877c2b68af21ed0
+      internalID: -204598629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_95
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743dafecdc5be11458bf72218d53ed5f
+      internalID: -923019065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_96
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84558a4c3b9c69e4cba0a23eca2a0e88
+      internalID: 1474477867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_97
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 2808
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06442f4942b9f1645a37e10aacc4880e
+      internalID: -678559145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6310eca2696466c459e8e40dc12fcfb4
+      internalID: -151429275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_99
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722adbe64c2caf44097e50f7808607dc
+      internalID: 2043233231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_100
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113bb4b0d57c81d4ea3390713ef5f146
+      internalID: 458402101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_101
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af06d2aa6fc76614ca3089aa19481db2
+      internalID: -2076261015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_102
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d910d0afb5a3a44a52cc5e9059f9d9
+      internalID: 1817454152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_103
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6cbd0847182d9468e2ba32674b8b59
+      internalID: 946428027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_104
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5d7b13bde6f5e4095183d4693a0683
+      internalID: 479023627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_105
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce40507da7eb78b4b89561c0ca8082d7
+      internalID: 1160471213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_106
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ffc4fb37102d74e9f71cfff4129193
+      internalID: 1176253789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_107
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2399264990e2955499929cbddd4d4ec1
+      internalID: 210720891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_108
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7f996e7ae10bc42965098af91935b2
+      internalID: -142644269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_109
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981b541c6ceb68845b638d758415dfa0
+      internalID: 425737202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_110
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b51265ed64b9c24eadfbc59e6a035ba
+      internalID: 790426109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_111
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 2409
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5661d68ede01dba42ae782ecc3eced98
+      internalID: -1022929318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8198909fe5de930448b32e2029608de9
+      internalID: 1492383536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_113
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1963f2b0773f3254a8f9f3bad3852ee3
+      internalID: 1180260661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_114
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df177d74edadae54bb43a2c0614b41a8
+      internalID: -993370250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_115
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab6d9cc2af66704cb17ed17c5ac44cc
+      internalID: 1303086147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_116
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae23a21a33c65b40b07930d587a23cc
+      internalID: 653048939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_117
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c132f1257f7a29f47b330125818f90bd
+      internalID: -1804744240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_118
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6eabee25c2a634e928011ec91ad6eb
+      internalID: -199849633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_119
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4655b30ad8322f14e8758f20604f00f3
+      internalID: 1845313993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_120
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177d9408eadc17d4eb06dde99103082c
+      internalID: 1590228780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_121
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0303634078cf54fa44b4104f0cfaf1
+      internalID: 105224394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_122
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305286f8a1b36074095a632bbea4d96e
+      internalID: 277184670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_123
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a877ef91a82ffbc4a8d3d5235bcbb257
+      internalID: -1244379313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_124
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c22f4bf619c75459d8bdedb946b212
+      internalID: -514719644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_125
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 2010
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e204cdc4c0fc6e44bb0fbf1973e0fbf0
+      internalID: 1735108770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0220f68811101cf4aa95832243ba75e4
+      internalID: 707681631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_127
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135f773d9c7b88459e36e17601cb6e2
+      internalID: -1247953009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_128
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1983857a2098f2f4cb496b698a1ba17d
+      internalID: -1894369397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_129
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61763d2d8696ca745857b04ced7794aa
+      internalID: -1792846239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_130
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e28ca5ce41ea24097ac31c4d6561ed
+      internalID: -1969263884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_131
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793f6e95c0618a74cab3b3457635d5a9
+      internalID: 1560242700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_132
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98e6968c0fede740924eff947d97377
+      internalID: 793888409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_133
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388b4626a01fd474480106d91cb650ee
+      internalID: 503742888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_134
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e514e7a165bd94147817171ae5e997ac
+      internalID: 1120891957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_135
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770519a0085024a4a987c21a9e377f9e
+      internalID: 1372451576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_136
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a5cd4dc17179d489d8e59b87a3d7f6
+      internalID: 606832477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_137
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9456fc15be332246ab5ff7596ba62ac
+      internalID: 455281601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_138
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e58a0558b23676498126ab6db94cdf4
+      internalID: -1445777514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_139
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 1611
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82087ae270464324799c36e7e1c1e6d0
+      internalID: -510479142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7483f1d812868cf4eaec40b0083ea734
+      internalID: 2074941484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_141
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd1913613943314aa36bfe6b62b84ce
+      internalID: 1366995473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_142
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a7e263df464504281b88ddf597dc99
+      internalID: 2100069649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_143
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f99f5d5b194614386144f7e311ca91
+      internalID: 911386055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_144
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c47839d869b3740b2ab14b048b9a9d
+      internalID: -810245316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_145
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7e7793a0e79ba4d8a4166a9087b826
+      internalID: -1254053564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_146
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6a3d382ef84e240a751063a6272998
+      internalID: 6033392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_147
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a3c7ad52c2374593e557880d21875
+      internalID: -166513563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_148
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66c59fb53710244d97921e8bac0d82d
+      internalID: -1521489323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_149
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c8bd483e711424181c773f10fccd73
+      internalID: 70809142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_150
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1f9ceede34e114998b03f365817123
+      internalID: -1868406501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_151
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daae8b72c3218c43af45eac163af268
+      internalID: -1274935788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_152
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25b0a321d1c2db42be0c3e8a192937b
+      internalID: -670406577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_153
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 1212
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccb8a97d5adc8c4891bf34234414940
+      internalID: -1201956643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c094740f19a8e4481f0cd1f45094b0
+      internalID: -723488821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_155
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9097e33094241df429160af268c249de
+      internalID: 2061145088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_156
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdb64babe993f04388c4209f11037a7
+      internalID: 208160293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_157
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f40ca6aba22a54e83de5369821eaa8
+      internalID: 249368135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_158
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23099f35235b8d143aeba96c050416ab
+      internalID: -1697667985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_159
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad898601c1082464b8f236e194504d93
+      internalID: -744148016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_160
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cd980814043964db7d81366a099cae
+      internalID: -1304221724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_161
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8df1b23806eb9044835db4e44508ee8
+      internalID: -1984580668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_162
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9693fe10c94b1184587d65290466666c
+      internalID: -2006350416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_163
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40211c87e2052945ab13e3359a18add
+      internalID: 770617436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_164
+      rect:
+        serializedVersion: 2
+        x: 3990
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46edc123249689448bac345178bdb64d
+      internalID: 1853588521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_165
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa53ca008c7a8f54ebf2b65d50bbd3d8
+      internalID: 1666610392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_166
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcae9c24edec1f14db6b1869463a57a7
+      internalID: 998475268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_167
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 813
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21924dd9a3673a444bd844dccbe1ab03
+      internalID: -1399001496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 414
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fe797ff1337654385805e4b66338af
+      internalID: -109760600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_169
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 414
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea73e43cb38d54fa1367c951e909ca
+      internalID: 1209510558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_170
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 414
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5b8bb447e0b4e48a2b0791c5b95b69
+      internalID: 1719887322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burst.png_171
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 414
+        width: 398
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92366de050a2ac24cb1319ffcb122229
+      internalID: -89625024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      burst.png_169: 1209510558
+      burst.png_136: 606832477
+      burst.png_21: -977063796
+      burst.png_102: 1817454152
+      burst.png_48: -676272598
+      burst.png_124: -514719644
+      burst.png_116: 653048939
+      burst.png_165: 1666610392
+      burst.png_8: 234077480
+      burst.png_154: -723488821
+      burst.png_44: 1378974514
+      burst.png_54: -119282016
+      burst.png_11: 1780356510
+      burst.png_135: 1372451576
+      burst.png_4: -1241783903
+      burst.png_108: -142644269
+      burst.png_61: -1080571683
+      burst.png_82: -2016935422
+      burst.png_112: 1492383536
+      burst.png_78: 758674666
+      burst.png_39: -1075903593
+      burst.png_65: -1143040267
+      burst.png_36: 91316439
+      burst.png_26: -1708366262
+      burst.png_31: -978479039
+      burst.png_60: 1567460131
+      burst.png_83: -1568056109
+      burst.png_64: -426503953
+      burst.png_133: 503742888
+      burst.png_70: -1336193480
+      burst.png_164: 1853588521
+      burst.png_79: -978313809
+      burst.png_128: -1894369397
+      burst.png_156: 208160293
+      burst.png_145: -1254053564
+      burst.png_7: -617121554
+      burst.png_25: 247430866
+      burst.png_107: 210720891
+      burst.png_5: -968194888
+      burst.png_2: -806215160
+      burst.png_152: -670406577
+      burst.png_34: 1424894450
+      burst.png_153: -1201956643
+      burst.png_141: 1366995473
+      burst.png_0: 1774309562
+      burst.png_120: 1590228780
+      burst.png_122: 277184670
+      burst.png_42: 1961243486
+      burst.png_77: -1842846684
+      burst.png_68: 943227641
+      burst.png_18: 1957021002
+      burst.png_35: 71354558
+      burst.png_22: -216853862
+      burst.png_9: 2027599589
+      burst.png_160: -1304221724
+      burst.png_45: 1875490569
+      burst.png_58: -1849633880
+      burst.png_90: 944205883
+      burst.png_97: -678559145
+      burst.png_76: 333823730
+      burst.png_67: 875377280
+      burst.png_115: 1303086147
+      burst.png_158: -1697667985
+      burst.png_149: 70809142
+      burst.png_86: -1694705736
+      burst.png_151: -1274935788
+      burst.png_52: 765710184
+      burst.png_73: -127399942
+      burst.png_117: -1804744240
+      burst.png_125: 1735108770
+      burst.png_46: -107606260
+      burst.png_157: 249368135
+      burst.png_134: 1120891957
+      burst.png_171: -89625024
+      burst.png_23: 1243151389
+      burst.png_30: 2060260387
+      burst.png_88: 1847809299
+      burst.png_72: -889521538
+      burst.png_69: -1760847031
+      burst.png_50: -1655230155
+      burst.png_55: 191107596
+      burst.png_104: 479023627
+      burst.png_170: 1719887322
+      burst.png_74: -1900779519
+      burst.png_103: 946428027
+      burst.png_167: -1399001496
+      burst.png_148: -1521489323
+      burst.png_119: 1845313993
+      burst.png_75: 364498863
+      burst.png_146: 6033392
+      burst.png_20: -581756758
+      burst.png_51: -1408380343
+      burst.png_132: 793888409
+      burst.png_32: 1697044078
+      burst.png_56: -1539755179
+      burst.png_131: 1560242700
+      burst.png_38: 2125424962
+      burst.png_91: 449418383
+      burst.png_14: 2042569076
+      burst.png_41: 294723182
+      burst.png_53: 1664235258
+      burst.png_105: 1160471213
+      burst.png_121: 105224394
+      burst.png_139: -510479142
+      burst.png_163: 770617436
+      burst.png_95: -923019065
+      burst.png_47: -432504616
+      burst.png_127: -1247953009
+      burst.png_114: -993370250
+      burst.png_168: -109760600
+      burst.png_130: -1969263884
+      burst.png_111: -1022929318
+      burst.png_66: 1344804709
+      burst.png_27: -718511082
+      burst.png_159: -744148016
+      burst.png_10: 2143075316
+      burst.png_43: -715575180
+      burst.png_100: 458402101
+      burst.png_140: 2074941484
+      burst.png_98: -151429275
+      burst.png_29: -504390783
+      burst.png_63: -375962413
+      burst.png_161: -1984580668
+      burst.png_110: 790426109
+      burst.png_28: 1581408621
+      burst.png_94: -204598629
+      burst.png_59: -1300879246
+      burst.png_155: 2061145088
+      burst.png_92: -1621611086
+      burst.png_162: -2006350416
+      burst.png_142: 2100069649
+      burst.png_6: 249595982
+      burst.png_143: 911386055
+      burst.png_1: 1529949430
+      burst.png_80: 1570679538
+      burst.png_101: -2076261015
+      burst.png_89: -1366801445
+      burst.png_166: 998475268
+      burst.png_17: 1476132487
+      burst.png_24: -1611353680
+      burst.png_87: -1856573986
+      burst.png_96: 1474477867
+      burst.png_147: -166513563
+      burst.png_13: -1408187290
+      burst.png_106: 1176253789
+      burst.png_109: 425737202
+      burst.png_150: -1868406501
+      burst.png_3: 1962933191
+      burst.png_84: 1019043560
+      burst.png_137: 455281601
+      burst.png_19: 811756650
+      burst.png_99: 2043233231
+      burst.png_126: 707681631
+      burst.png_85: 523478949
+      burst.png_12: -1709614084
+      burst.png_129: -1792846239
+      burst.png_81: -485909119
+      burst.png_57: 1421850566
+      burst.png_93: 73042924
+      burst.png_113: 1180260661
+      burst.png_71: 1990065601
+      burst.png_123: -1244379313
+      burst.png_16: -876578699
+      burst.png_118: -199849633
+      burst.png_138: -1445777514
+      burst.png_37: -1244984161
+      burst.png_62: 1575103344
+      burst.png_40: 170832516
+      burst.png_49: -1624806903
+      burst.png_33: -496988164
+      burst.png_144: -810245316
+      burst.png_15: -1756451645
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

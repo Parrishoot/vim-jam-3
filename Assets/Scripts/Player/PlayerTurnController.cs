@@ -8,6 +8,8 @@ public class PlayerTurnController : Singleton<PlayerTurnController>
     public int handSize = 4;
     public WarriorSpawner warriorSpawner;
 
+    public Animator fireAnimator;
+
     private enum TURN_STATES
     {
         PENDING,
@@ -94,6 +96,12 @@ public class PlayerTurnController : Singleton<PlayerTurnController>
 
             yield return new WaitForSeconds(.25f);
         }
+
+        yield return new WaitForSeconds(1f);
+
+        fireAnimator.SetTrigger("burst");
+
+        yield return new WaitForSeconds(2f);
     }
 
     IEnumerator ProcessWarriors(List<CardController> warriorControllers)
