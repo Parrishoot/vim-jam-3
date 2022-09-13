@@ -18,7 +18,7 @@ public class CardController : MonoBehaviour
 
     private CardUIController cardUIController;
 
-    private int combatPower;
+    public int combatPower;
 
     public void Start()
     {

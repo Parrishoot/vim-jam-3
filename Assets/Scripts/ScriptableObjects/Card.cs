@@ -7,6 +7,8 @@ public class Card : ScriptableObject
 {
     private const int INFINITE = -1;
 
+    public GameObject warriorPrefab;
+
     public enum PASSIVE_TYPE
     {
         HAND_SIZE,

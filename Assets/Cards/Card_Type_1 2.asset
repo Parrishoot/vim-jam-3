@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69427dfab22daac43b12b21a52340a82, type: 3}
   m_Name: Card_Type_1 2
   m_EditorClassIdentifier: 
+  warriorPrefab: {fileID: 2616947883032256418, guid: 68b290cd9a8fc2748bfa09717e8f72a9, type: 3}
   title: SOMEONE
   combatPowerBounds: {x: 3, y: 7}
   turnAmount: 3
