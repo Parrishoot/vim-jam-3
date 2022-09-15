@@ -1,0 +1,18 @@
+- Damage modifier
+	- Warrior does twice as much/ half as much
+
+- Shield
+	- Reduce or block all damage over the next turn
+
+- Burn Damage
+	- Take X health each turn
+
+- Change Hand size
+	- Increase / Decrease the size of your hand
+
+- Save Card
+	- Save 1 card per turn
+
+- Skip Turn
+	- Skip enemy's turn
+

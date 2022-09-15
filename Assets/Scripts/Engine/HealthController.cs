@@ -14,5 +14,7 @@ public class HealthController : MonoBehaviour
     public void Damage(int damage)
     {
         totalHealth -= damage;
+
+        gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
     }
 }

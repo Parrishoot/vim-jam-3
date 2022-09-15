@@ -24,4 +24,14 @@ public class PlayerTurnUIController: MonoBehaviour
     {
         processTurnButton.interactable = true;
     }
+
+    public void DeactivateButton()
+    {
+        processTurnButton.enabled = false;
+    }
+
+    public void ActivateButton()
+    {
+        processTurnButton.enabled = true;
+    }
 }

@@ -5,16 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Card", menuName = "Cards/Basic Card", order = 200)]
 public class Card : ScriptableObject
 {
-    private const int INFINITE = -1;
+    public static int INFINITE_TURNS = -1;
 
     public GameObject warriorPrefab;
 
-    public enum PASSIVE_TYPE
+    public List<GameObject> passiveControllerPrefabs;
+
+    public enum TARGET_TYPE
     {
-        HAND_SIZE,
-        ADD_EFFECT,
-        BOLSTER,
-        HEAL
+        SELF,
+        OTHER
     }
 
     public enum PASSIVE_APPLY
@@ -28,18 +28,34 @@ public class Card : ScriptableObject
 
     public Vector2 combatPowerBounds;
 
-    public int turnAmount = INFINITE;
+    public int turnAmount = INFINITE_TURNS;
 
     public PASSIVE_APPLY passiveApply = PASSIVE_APPLY.DURING;
 
+    public TARGET_TYPE targetType = TARGET_TYPE.SELF;
+
+    public float damageModifier = 1;
+
     public override string ToString()
     {
-        return "Do something " + GetCardPostfix();
+
+        List<string> textAttributes = new List<string>();
+
+        textAttributes.Add(GetDamageModifierText());
+
+        textAttributes.RemoveAll(s => s == "");
+
+        return string.Join(" and ", textAttributes) + GetCardPostfix();
     }
 
-    public string GetCardPostfix()
+    private string GetDamageModifierText()
     {
-        string postfix = "";
+        return damageModifier == 1 ? "" : "Deal " + damageModifier.ToString() + "x damage";
+    }
+
+    private string GetCardPostfix()
+    {
+        string postfix = " ";
 
         switch(passiveApply)
         {
@@ -51,8 +67,16 @@ public class Card : ScriptableObject
                 break;
         }
 
-        string turnString = turnAmount != INFINITE ? "for " + turnAmount.ToString() + " turns" : "";
+        switch(turnAmount)
+        {
+            case 1:
+                return postfix + "this turn";
 
-        return postfix + turnString;
+            case -1:
+                return postfix + "indefinitely";
+
+            default:
+                return postfix + "for " + turnAmount.ToString() + " turns";
+        }
     }
 }

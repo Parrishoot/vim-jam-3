@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69427dfab22daac43b12b21a52340a82, type: 3}
-  m_Name: Card_Type_1 3
+  m_Name: DamageModifierObject
   m_EditorClassIdentifier: 
   warriorPrefab: {fileID: 2616947883032256418, guid: 68b290cd9a8fc2748bfa09717e8f72a9, type: 3}
-  title: WEAK WILLY
-  combatPowerBounds: {x: 0, y: 1}
-  turnAmount: -1
-  passiveApply: 0
+  passiveControllerPrefabs:
+  - {fileID: 7791008266870234839, guid: 981047266d4889744af763f311ce75d7, type: 3}
+  title: Double Damage
+  combatPowerBounds: {x: 3, y: 5}
+  turnAmount: 2
+  passiveApply: 1
+  targetType: 0
+  damageModifier: 2

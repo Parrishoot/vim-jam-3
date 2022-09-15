@@ -8,13 +8,13 @@ public class Warrior : MonoBehaviour
 
     public AnimationCurve chargeCurve;
 
+    private Animator animator;
+
     public enum TARGET_TYPE
     {
         PLAYER,
         ENEMY
     }
-
-    public TARGET_TYPE targetType = TARGET_TYPE.ENEMY;
 
     private enum WARRIOR_STATE
     {
@@ -32,13 +32,33 @@ public class Warrior : MonoBehaviour
     private float currentChargeTime;
     private Vector3 startingLocation;
 
-    public void Init(int combatPower)
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    public void Init(int combatPower, TARGET_TYPE targetType)
     {
         this.combatPower = combatPower;
 
         target = targetType == TARGET_TYPE.PLAYER ? GameController.GetInstance().GetPlayerHealthController() : GameController.GetInstance().GetEnemyHealthController();
 
         startingLocation = transform.position;
+
+        transform.localScale = new Vector3(Mathf.Sign(target.gameObject.transform.position.x - transform.position.x), transform.localScale.y, transform.localScale.z);
+
+        
+    }
+
+    public void AddDamageModifier(float damageModifier)
+    {
+
+        if(damageModifier > 0)
+        {
+            gameObject.transform.localScale = new Vector3(1.5f * (Mathf.Sign(gameObject.transform.localScale.x)), 1.5f, 1);
+        }
+
+        combatPower = (int) (combatPower * damageModifier);
     }
 
     public void Update()
@@ -72,6 +92,7 @@ public class Warrior : MonoBehaviour
 
     public void Charge()
     {
+        animator.SetTrigger("charge");
         warriorState = WARRIOR_STATE.CHARGING;
     }
 
