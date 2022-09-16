@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DamageModifierPassive : PassiveController
 {
+    public override string GetText()
+    {
+        return StringUtils.GetDamageModifierText(card.damageModifier) + StringUtils.GetCardPostfix(turnCount);
+    }
 
     public override void Process()
     {

@@ -6,6 +6,11 @@ public class CardHandSizePassive : PassiveController
 {
     private bool applied = false;
 
+    public override string GetText()
+    {
+        return StringUtils.GetHandSizeAdjustAmountText(card.handSizeAdjustAmount) + StringUtils.GetCardPostfix(turnCount);
+    }
+
     public override void Process()
     {
         if(!applied)

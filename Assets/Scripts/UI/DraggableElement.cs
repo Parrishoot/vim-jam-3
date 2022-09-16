@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems; 
 
-public class DraggableElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class DraggableElement : UIFollower, IPointerEnterHandler, IPointerExitHandler
 {
     public float scaleFactor;
     public float scaleSpeed;
 
-    public float followSpeed = 5f;
-
     public float rotateAmount = 30f;
     public float rotateSpeed = 3f;
-
-    public GameObject parentObject;
 
     public AnimationCurve curve;
 
@@ -50,19 +46,20 @@ public class DraggableElement : MonoBehaviour, IPointerEnterHandler, IPointerExi
         lerpTime = 0f;
     }
 
-    public void Start()
+    public override void Start()
     {
+
         initScale = transform.localScale;
         targetScale = transform.localScale;
 
-        transform.SetParent(FollowerCanvas.GetInstance().GetTransform(), true);
+        base.Start();
 
         // Move everything in front
         transform.position += new Vector3(0, 0, -10);
     }
 
 
-    public void Update()
+    public override void Update()
     {
         if (transform.localScale != targetScale)
         {
@@ -90,7 +87,6 @@ public class DraggableElement : MonoBehaviour, IPointerEnterHandler, IPointerExi
             transform.eulerAngles = Vector3.zero;
         }
 
-        Vector2 newPos = Vector2.Lerp(transform.position, parentObject.transform.position, Mathf.SmoothStep(0f, 1f, Time.deltaTime * followSpeed));
-        transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+        base.Update();
     }
 }

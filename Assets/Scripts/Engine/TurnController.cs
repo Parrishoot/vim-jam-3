@@ -119,7 +119,7 @@ public abstract class TurnController : MonoBehaviour
             foreach(GameObject passiveControllerPrefab in prefabsForCard)
             {
                 GameObject passiveControllerObj = GameObject.Instantiate(passiveControllerPrefab);
-                passiveControllerObj.transform.SetParent(passiveTransform);
+                passiveControllerObj.transform.SetParent(passiveTransform, false);
 
                 PassiveController passiveController = passiveControllerObj.GetComponent<PassiveController>();
                 passiveController.SetCard(sacrificeController.card);
@@ -175,7 +175,7 @@ public abstract class TurnController : MonoBehaviour
 
         yield return new WaitForSeconds(.5f);
 
-        ProcessControllers(duringPassiveControllers);
+        yield return StartCoroutine(ProcessControllers(duringPassiveControllers));
 
         foreach (Warrior warrior in warriors)
         {
@@ -228,7 +228,10 @@ public abstract class TurnController : MonoBehaviour
         List<CardController> warriorControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.WARRIOR);
 
         // TODO: ADD THE PASSIVES HERE
-        yield return StartCoroutine(ProcessSacrifices(sacrificeControllers));
+        if(sacrificeControllers.Count > 0)
+        {
+            yield return StartCoroutine(ProcessSacrifices(sacrificeControllers));
+        }
 
         yield return StartCoroutine(ProcessWarriors(warriorControllers));
 

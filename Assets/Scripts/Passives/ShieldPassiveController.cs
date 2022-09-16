@@ -8,6 +8,22 @@ public class ShieldPassiveController : PassiveController
 
     private Shield shield;
 
+    public override string GetText()
+    {
+        float shieldAmount = 0f;
+
+        if(shield != null)
+        {
+            shieldAmount = Mathf.Max(shield.shieldAmount, 0f);
+        }
+        else
+        {
+            shieldAmount = card.shieldAmount;
+        }
+
+        return StringUtils.GetShieldText(shieldAmount) + StringUtils.GetCardPostfix(turnCount);
+    }
+
     public override void Process()
     {
 

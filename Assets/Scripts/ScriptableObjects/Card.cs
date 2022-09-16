@@ -28,56 +28,15 @@ public class Card : ScriptableObject
 
         List<string> textAttributes = new List<string>();
 
-        textAttributes.Add(GetDamageModifierText());
-        textAttributes.Add(GetShieldText());
-        textAttributes.Add(GetHealText());
-        textAttributes.Add(GetLifeStealText());
-        textAttributes.Add(GetHandSizeAdjustAmountText());
+        textAttributes.Add(StringUtils.GetDamageModifierText(damageModifier));
+        textAttributes.Add(StringUtils.GetShieldText(shieldAmount));
+        textAttributes.Add(StringUtils.GetHealText(healAmount));
+        textAttributes.Add(StringUtils.GetLifeStealText(stealAmount));
+        textAttributes.Add(StringUtils.GetHandSizeAdjustAmountText(handSizeAdjustAmount));
 
         textAttributes.RemoveAll(s => s == "");
 
-        return (string.Join(" and ", textAttributes) + GetCardPostfix()).ToUpper();
+        return (string.Join(" and ", textAttributes) + StringUtils.GetCardPostfix(turnAmount)).ToUpper();
     }
 
-    private string GetDamageModifierText()
-    {
-        return damageModifier == 1 ? "" : "Deal " + damageModifier.ToString() + "x damage";
-    }
-
-    private string GetShieldText()
-    {
-        return shieldAmount <= 0 ? "" : "Shield up to " + shieldAmount.ToString() + " damage";
-    }
-
-    private string GetHealText()
-    {
-        return healAmount <= 0 ? "" : "Heal " + healAmount.ToString() + " HP at the end of your turn";
-    }
-
-    private string GetLifeStealText()
-    {
-        return stealAmount <= 0 ? "" : "Steal " + stealAmount.ToString() + " HP from your opponent at the end of your turn";
-    }
-
-    private string GetHandSizeAdjustAmountText()
-    {
-        return handSizeAdjustAmount == 0 ? "" : "Adjust hand size by " + handSizeAdjustAmount.ToString() + " card" + (Mathf.Abs(handSizeAdjustAmount) > 0 ? "s" : "");
-    }
-
-    private string GetCardPostfix()
-    {
-        string postfix = " ";
-
-        switch(turnAmount)
-        {
-            case 1:
-                return postfix + "this turn";
-
-            case -1:
-                return postfix + "indefinitely";
-
-            default:
-                return postfix + "for " + turnAmount.ToString() + " turns";
-        }
-    }
 }
