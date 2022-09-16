@@ -49,4 +49,9 @@ public class PlayerTurnController : TurnController
 
         base.ProcessTurn();
     }
+
+    public override TurnController GetOpponentTurnController()
+    {
+        return FindObjectOfType<EnemyTurnController>();
+    }
 }

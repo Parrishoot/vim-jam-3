@@ -6,7 +6,9 @@ public class WarriorSpawner : Singleton<WarriorSpawner>
 {
     public float spawnRadius = 3f;
 
-    public Warrior SpawnWarrior(GameObject warriorPrefab, int combatPower, Warrior.TARGET_TYPE targetType)
+    public GameObject warriorPrefab;
+
+    public Warrior SpawnWarrior(int combatPower, Warrior.TARGET_TYPE targetType)
     {
         Vector2 randomLocation = Random.insideUnitCircle * spawnRadius;
         Vector2 spawnLocation = gameObject.transform.position + new Vector3(randomLocation.x, randomLocation.y, 0f);

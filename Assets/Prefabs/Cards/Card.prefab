@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 0}
   playerDraggableCard: {fileID: 2593915109691097121}
+  combatPower: 0
 --- !u!1 &1935922539673429835
 GameObject:
   m_ObjectHideFlags: 0

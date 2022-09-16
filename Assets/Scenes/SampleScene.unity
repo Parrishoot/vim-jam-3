@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyHealthController
       objectReference: {fileID: 0}
+    - target: {fileID: 4991467225869639481, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
+      propertyPath: m_TagString
+      value: PlayerHealthController
+      objectReference: {fileID: 0}
     - target: {fileID: 6862875824098302568, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -251,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRadius: 0.5
+  warriorPrefab: {fileID: 2616947883032256418, guid: 68b290cd9a8fc2748bfa09717e8f72a9, type: 3}
 --- !u!212 &136118328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1136,6 +1141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cards:
   - {fileID: 11400000, guid: 4dedef27cd7111e4da4c14024882e5b9, type: 2}
+  - {fileID: 11400000, guid: 782f335b746c14e4ebc12595056dc666, type: 2}
+  - {fileID: 11400000, guid: 8d39822485cf93a4494faeda78933ccf, type: 2}
+  - {fileID: 11400000, guid: 06593c557f7c53748ab04fb4f0c8c078, type: 2}
+  - {fileID: 11400000, guid: d955df54882d85b4ab750883c8533a01, type: 2}
   cardPrefab: {fileID: 1645078366160366778, guid: 4130a998f0ad0e44f934369a32ac9a34, type: 3}
 --- !u!4 &693689046
 Transform:
@@ -1424,6 +1433,7 @@ MonoBehaviour:
   cardSpawnTransform: {fileID: 452614692}
   passiveTransform: {fileID: 1587791398}
   warriorTargetType: 1
+  healthController: {fileID: 4691037308074848856}
 --- !u!114 &1425786261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,6 +1448,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardsLeftText: {fileID: 431932249}
   processTurnButton: {fileID: 331872012}
+--- !u!1 &1439766826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439766828}
+  - component: {fileID: 1439766827}
+  m_Layer: 0
+  m_Name: PassivePrefabFetcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1439766827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439766826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf2b4cf241cb0b44ac4b6624ef1eaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageModifierPassivePrefab: {fileID: 7791008266870234839, guid: 981047266d4889744af763f311ce75d7, type: 3}
+  shieldPassivePrefab: {fileID: 1500031301158634921, guid: 77dd0d48d5783fe46a06820a434a40d1, type: 3}
+  healPassivePrefab: {fileID: 2872331983974599946, guid: 545fe760aba2b4a41bbed7e8304f3772, type: 3}
+  lifeStealPassivePrefab: {fileID: 4299806721054593998, guid: ceb7b0786244aca4bb3c92bad8c32a94, type: 3}
+  handSizeAdjustPassivePrefab: {fileID: 7997260346268988207, guid: f7d766ffb8eeada48afea9765a8f0fcc, type: 3}
+--- !u!4 &1439766828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439766826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06954631, y: -0.1628514, z: -0.17126507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467296752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +1986,7 @@ MonoBehaviour:
   cardSpawnTransform: {fileID: 1384016300}
   passiveTransform: {fileID: 1155542766}
   warriorTargetType: 0
+  healthController: {fileID: 66239461}
 --- !u!1 &2114028959
 GameObject:
   m_ObjectHideFlags: 0

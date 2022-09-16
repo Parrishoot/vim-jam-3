@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class DamageModifierPassive : PassiveController
 {
-    public override void ProcessAfterTurn()
-    {
-        
-    }
 
-    public override void ProcessBeforeTurn()
-    {
-        
-    }
-
-    public override void ProcessDuringTurn()
+    public override void Process()
     {
         foreach(Warrior warrior in GameObject.FindObjectsOfType<Warrior>())
         {
             warrior.AddDamageModifier(card.damageModifier);
         }
+
+        base.Process();
     }
 }

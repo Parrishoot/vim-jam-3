@@ -11,10 +11,28 @@ public class HealthController : MonoBehaviour
         return totalHealth <= 0;
     }
 
-    public void Damage(int damage)
+    public int Damage(int damage)
     {
-        totalHealth -= damage;
 
-        gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
+        int remainingDamage = damage;
+
+        foreach(Shield shield in GetComponentsInChildren<Shield>())
+        {
+            remainingDamage = shield.BlockDamage(remainingDamage);
+        }
+
+        if(remainingDamage > 0)
+        {
+            totalHealth -= remainingDamage;
+
+            gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
+        }
+
+        return remainingDamage;
+    }
+
+    public void Heal(int healAmount)
+    {
+        totalHealth += healAmount;
     }
 }

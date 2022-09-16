@@ -18,4 +18,9 @@ public class EnemyTurnController : TurnController
 
         ProcessTurn();
     }
+
+    public override TurnController GetOpponentTurnController()
+    {
+        return FindObjectOfType<PlayerTurnController>();
+    }
 }

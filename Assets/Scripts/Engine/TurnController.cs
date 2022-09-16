@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnController : MonoBehaviour
+public abstract class TurnController : MonoBehaviour
 {
     public int handSize = 1;
     public WarriorSpawner warriorSpawner;
@@ -13,6 +13,8 @@ public class TurnController : MonoBehaviour
     public Transform passiveTransform;
 
     public Warrior.TARGET_TYPE warriorTargetType;
+
+    public HealthController healthController;
 
     private List<PassiveController> beforePassiveControllers = new List<PassiveController>();
     private List<PassiveController> afterPassiveControllers = new List<PassiveController>();
@@ -30,6 +32,23 @@ public class TurnController : MonoBehaviour
 
     protected List<CardController> currentHand = new List<CardController>();
 
+    public abstract TurnController GetOpponentTurnController();
+
+    public void AddBeforePassiveController(PassiveController passiveController)
+    {
+        beforePassiveControllers.Add(passiveController);
+    }
+
+    public void AddDuringPassiveContrller(PassiveController passiveController)
+    {
+        duringPassiveControllers.Add(passiveController);
+    }
+
+    public void AddAfterPassiveController(PassiveController passiveController)
+    {
+        afterPassiveControllers.Add(passiveController);
+    }
+
     public virtual void ProcessTurn() {
 
         StartCoroutine(Turn());
@@ -44,7 +63,15 @@ public class TurnController : MonoBehaviour
 
     public virtual void StartTurn()
     {
-        StartCoroutine(DealCards());
+        StartCoroutine(PreTurn());
+    }
+
+    private IEnumerator PreTurn()
+    {
+        yield return StartCoroutine(ProcessControllers(beforePassiveControllers));
+
+        yield return StartCoroutine(DealCards());
+
         turnState = TURN_STATE.ACTIVE;
     }
 
@@ -86,7 +113,10 @@ public class TurnController : MonoBehaviour
     {
         foreach (CardController sacrificeController in sacrificeControllers)
         {
-            foreach(GameObject passiveControllerPrefab in sacrificeController.card.passiveControllerPrefabs)
+
+            List<GameObject> prefabsForCard = PassivePrefabFetcher.GetInstance().FetchPassiveForCard(sacrificeController.card);
+
+            foreach(GameObject passiveControllerPrefab in prefabsForCard)
             {
                 GameObject passiveControllerObj = GameObject.Instantiate(passiveControllerPrefab);
                 passiveControllerObj.transform.SetParent(passiveTransform);
@@ -94,18 +124,22 @@ public class TurnController : MonoBehaviour
                 PassiveController passiveController = passiveControllerObj.GetComponent<PassiveController>();
                 passiveController.SetCard(sacrificeController.card);
 
-                switch(sacrificeController.card.passiveApply)
+                TurnController turnController = passiveController.TargetsEnemy() ? GetOpponentTurnController() : this;
+
+                passiveController.SetTurnController(this);
+
+                switch (passiveController.passiveApplyPhase)
                 {
-                    case Card.PASSIVE_APPLY.BEFORE:
-                        beforePassiveControllers.Add(passiveController);
+                    case PassiveController.PASSIVE_APPLY_PHASE.BEFORE:
+                        turnController.AddBeforePassiveController(passiveController);
                         break;
 
-                    case Card.PASSIVE_APPLY.DURING:
-                        duringPassiveControllers.Add(passiveController);
+                    case PassiveController.PASSIVE_APPLY_PHASE.DURING:
+                        turnController.AddDuringPassiveContrller(passiveController);
                         break;
 
-                    case Card.PASSIVE_APPLY.AFTER:
-                        afterPassiveControllers.Add(passiveController);
+                    case PassiveController.PASSIVE_APPLY_PHASE.AFTER:
+                        turnController.AddAfterPassiveController(passiveController);
                         break;
                 }
             }
@@ -130,7 +164,7 @@ public class TurnController : MonoBehaviour
 
         foreach (CardController warriorController in warriorControllers)
         {
-            Warrior warrior = warriorSpawner.SpawnWarrior(warriorController.card.warriorPrefab, warriorController.combatPower, warriorTargetType);
+            Warrior warrior = warriorSpawner.SpawnWarrior(warriorController.combatPower, warriorTargetType);
 
             warriorController.Despawn();
 
@@ -141,15 +175,7 @@ public class TurnController : MonoBehaviour
 
         yield return new WaitForSeconds(.5f);
 
-        foreach(PassiveController passiveController in duringPassiveControllers)
-        {
-            passiveController.ShowPassive();
-            passiveController.ProcessDuringTurn();
-
-            yield return new WaitForSeconds(1f);
-
-            passiveController.HidePassive();
-        }
+        ProcessControllers(duringPassiveControllers);
 
         foreach (Warrior warrior in warriors)
         {
@@ -159,6 +185,8 @@ public class TurnController : MonoBehaviour
             yield return new WaitForSeconds(.5f);
 
         }
+
+        yield return new WaitForSeconds(1f);
     }
 
     public void CheckForControllerExpiration(List<PassiveController> passiveControllers)
@@ -167,8 +195,6 @@ public class TurnController : MonoBehaviour
 
         for(int i = 0; i < passiveControllers.Count; i++)
         {
-            passiveControllers[i].FinishTurn();
-
             if(passiveControllers[i].Finished())
             {
                 controllersToDelete.Add(passiveControllers[i]);
@@ -183,6 +209,19 @@ public class TurnController : MonoBehaviour
 
     }
 
+    private IEnumerator ProcessControllers(List<PassiveController> passiveControllers)
+    {
+        foreach (PassiveController passiveController in passiveControllers)
+        {
+            passiveController.ShowPassive();
+            passiveController.Process();
+
+            yield return new WaitForSeconds(1f);
+
+            passiveController.HidePassive();
+        }
+    }
+
     public IEnumerator Turn()
     {
         List<CardController> sacrificeControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.SACRIFICE);
@@ -193,10 +232,8 @@ public class TurnController : MonoBehaviour
 
         yield return StartCoroutine(ProcessWarriors(warriorControllers));
 
-        foreach(PassiveController passiveController in afterPassiveControllers)
-        {
-            passiveController.ProcessAfterTurn();
-        }
+        yield return StartCoroutine(ProcessControllers(afterPassiveControllers));
+
 
         CheckForControllerExpiration(beforePassiveControllers);
         CheckForControllerExpiration(duringPassiveControllers);
