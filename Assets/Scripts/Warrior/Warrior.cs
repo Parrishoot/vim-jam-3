@@ -81,7 +81,9 @@ public class Warrior : MonoBehaviour
 
             case WARRIOR_STATE.ATTACKING:
                 target.Damage(combatPower);
-                Despawn();
+                animator.SetTrigger("punch");
+                GetComponent<Shaker>().SetShake(.05f, .2f, 500);
+                warriorState = WARRIOR_STATE.DESPAWNING;
                 break;
 
             case WARRIOR_STATE.DESPAWNING:

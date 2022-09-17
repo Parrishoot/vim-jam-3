@@ -118,8 +118,7 @@ public abstract class TurnController : MonoBehaviour
 
             foreach(GameObject passiveControllerPrefab in prefabsForCard)
             {
-                GameObject passiveControllerObj = GameObject.Instantiate(passiveControllerPrefab);
-                passiveControllerObj.transform.SetParent(passiveTransform, false);
+                GameObject passiveControllerObj = GameObject.Instantiate(passiveControllerPrefab, parent: passiveTransform);
 
                 PassiveController passiveController = passiveControllerObj.GetComponent<PassiveController>();
                 passiveController.SetCard(sacrificeController.card);

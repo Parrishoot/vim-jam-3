@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1171190904872742177, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_MinWidth
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171190904872742177, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_MinHeight
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171190904872742177, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 1425664229559418881, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: parentObject
       value: 
@@ -64,14 +76,6 @@ PrefabInstance:
       value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -101,11 +105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -119,6 +123,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705210730229915902, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: parentObject
+      value: 
+      objectReference: {fileID: 725653347819054697}
+    - target: {fileID: 8552458583521419636, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -162354526, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
 --- !u!1 &725653347819054697 stripped
@@ -138,7 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b55680846d195546860e0f3cf60c8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passiveUIController: {fileID: 2311484819117834924}
+  rightPassiveUIController: {fileID: 7985234533603156563}
+  leftPassiveUIController: {fileID: 2311484819117834924}
   passiveTargetType: 1
   passiveApplyPhase: 0
   turnCount: 1
@@ -146,6 +163,17 @@ MonoBehaviour:
 --- !u!114 &2311484819117834924 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1425664229559418881, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+  m_PrefabInstance: {fileID: 3737126919291060909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4861fae8605c80441953e8b373c2f343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7985234533603156563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6705210730229915902, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
   m_PrefabInstance: {fileID: 3737126919291060909}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

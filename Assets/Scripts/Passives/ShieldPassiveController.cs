@@ -24,6 +24,11 @@ public class ShieldPassiveController : PassiveController
         return StringUtils.GetShieldText(shieldAmount) + StringUtils.GetCardPostfix(turnCount);
     }
 
+    public override bool Finished()
+    {
+        return base.Finished() || shield.IsDepleted();
+    }
+
     public override void Process()
     {
 
@@ -37,11 +42,6 @@ public class ShieldPassiveController : PassiveController
             shield.shieldAmount = card.shieldAmount;
         }
 
-        base.Process();
-
-        if (Finished() || shield.IsDepleted())
-        {
-            shield.Despawn();
-        }
+        turnCount -= 1;
     }
 }

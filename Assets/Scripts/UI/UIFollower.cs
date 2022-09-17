@@ -6,6 +6,9 @@ public class UIFollower : MonoBehaviour
 {
     public GameObject parentObject;
 
+    public RectTransform objectRectTransform;
+    public RectTransform parentRectTransform;
+
     public float followSpeed = 40f;
 
     public virtual void Start()
@@ -17,6 +20,6 @@ public class UIFollower : MonoBehaviour
     {
         Vector2 newPos = Vector2.Lerp(transform.position, parentObject.transform.position, Mathf.SmoothStep(0f, 1f, Time.deltaTime * followSpeed));
         transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
-        
+   
     }
 }

@@ -13,4 +13,10 @@ public class PassiveUIController: UIFollower
         passiveText.SetText(passiveString);
     }
 
+    public void Despawn()
+    {
+        Destroy(parentObject.gameObject);
+        Destroy(gameObject);
+    }
+
 }

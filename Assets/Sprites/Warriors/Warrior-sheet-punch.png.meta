@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5eea2814f31d6674bb6fabf020205c58
+guid: 7f8c312cd242d024085646a39ab67239
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Warrior-sheet_0
+      name: Warrior-sheet-punch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 341b76506cd412544b267bbc30b20455
-      internalID: 1437803590
+      spriteID: 89929fe9dcea2af47ac9ea0f9dc8c4c8
+      internalID: -1491535353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior-sheet_1
+      name: Warrior-sheet-punch_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 651acfafd3512cf408e116772cc5ac25
-      internalID: 1024839705
+      spriteID: a13decc9965d03b45b254b0e5ce8b30d
+      internalID: -388173177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior-sheet_2
+      name: Warrior-sheet-punch_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81f765f176dd1349a65bddbe325d844
-      internalID: -1455556392
+      spriteID: bb676991aed5ad74685b329d54b7f56d
+      internalID: -743350802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior-sheet_3
+      name: Warrior-sheet-punch_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,8 +193,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52cc0719a37bc84c8be35660c3d4003
-      internalID: 1395067366
+      spriteID: 4db4970d5e7a25b4a8b26264a636773f
+      internalID: 383814033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior-sheet-punch_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8b308757af8f241843bf2d15856c8f
+      internalID: -2002321008
       vertices: []
       indices: 
       edges: []
@@ -210,10 +231,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Warrior-sheet_2: -1455556392
-      Warrior-sheet_0: 1437803590
-      Warrior-sheet_3: 1395067366
-      Warrior-sheet_1: 1024839705
+      Warrior-sheet-punch_1: -388173177
+      Warrior-sheet-punch_3: 383814033
+      Warrior-sheet-punch_0: -1491535353
+      Warrior-sheet-punch_4: -2002321008
+      Warrior-sheet-punch_2: -743350802
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

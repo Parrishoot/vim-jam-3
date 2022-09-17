@@ -19,8 +19,8 @@ public class PassiveShower : MonoBehaviour
     private void Update()
     {
         // Now this is what I call "Game Jam Code"
-        float LEFT_BOUNDS = Screen.width * .25f;
-        float RIGHT_BOUNDS = Screen.width * .75f;
+        float LEFT_BOUNDS = Screen.width * .15f;
+        float RIGHT_BOUNDS = Screen.width * .85f;
 
         if (Input.mousePosition.x < LEFT_BOUNDS && leftSide && !showing)
         {
@@ -30,12 +30,12 @@ public class PassiveShower : MonoBehaviour
         else if(Input.mousePosition.x > RIGHT_BOUNDS && !leftSide && !showing)
         {
             showing = true;
-            animator.SetTrigger("moveLeft");
+            animator.SetTrigger("moveRight");
         }
         else if(showing && Input.mousePosition.x >= LEFT_BOUNDS && Input.mousePosition.x <= RIGHT_BOUNDS)
         {
             showing = false;
-            animator.SetTrigger(leftSide ? "moveLeft" : "moveRight");
+            animator.SetTrigger("moveLeft");
         }
     }
 

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public abstract class PassiveController : MonoBehaviour
 {
-    public PassiveUIController passiveUIController;
+    public PassiveUIController rightPassiveUIController;
+    public PassiveUIController leftPassiveUIController;
+
+    private PassiveUIController passiveUIController;
 
     public enum PASSIVE_TARGET_TYPE
     {
@@ -27,6 +30,11 @@ public abstract class PassiveController : MonoBehaviour
     public virtual void Process()
     {
         turnCount -= 1;
+
+        if(Finished())
+        {
+            passiveUIController.Despawn();
+        }
     }
 
     public abstract string GetText();
@@ -38,12 +46,10 @@ public abstract class PassiveController : MonoBehaviour
 
     public virtual void Despawn()
     {
-        Destroy(passiveUIController.parentObject.gameObject);
-        Destroy(passiveUIController.gameObject);
         GameObject.Destroy(gameObject);
     }
 
-    public bool Finished()
+    public virtual bool Finished()
     {
         return turnCount <= 0;
     }
@@ -62,11 +68,25 @@ public abstract class PassiveController : MonoBehaviour
     public void SetTurnController(TurnController turnController)
     {
         this.turnController = turnController;
+
+        if(turnController.passiveTransform.GetComponentInParent<PassiveShower>().leftSide)
+        {
+            passiveUIController = leftPassiveUIController;
+            Destroy(rightPassiveUIController.gameObject);
+        }
+        else
+        {
+            passiveUIController = rightPassiveUIController;
+            Destroy(leftPassiveUIController.gameObject);
+        }
     }
 
     public void Update()
     {
-        passiveUIController.SetText(GetText().ToUpper());
+        if(passiveUIController != null)
+        {
+            passiveUIController.SetText(GetText().ToUpper());
+        }
     }
 
     public TurnController GetTurnController()
