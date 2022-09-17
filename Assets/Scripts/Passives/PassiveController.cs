@@ -7,7 +7,7 @@ public abstract class PassiveController : MonoBehaviour
     public PassiveUIController rightPassiveUIController;
     public PassiveUIController leftPassiveUIController;
 
-    private PassiveUIController passiveUIController;
+    protected PassiveUIController passiveUIController;
 
     public enum PASSIVE_TARGET_TYPE
     {

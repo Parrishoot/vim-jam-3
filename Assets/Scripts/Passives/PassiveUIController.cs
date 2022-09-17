@@ -15,7 +15,6 @@ public class PassiveUIController: UIFollower
 
     public void Despawn()
     {
-        Destroy(parentObject.gameObject);
         Destroy(gameObject);
     }
 

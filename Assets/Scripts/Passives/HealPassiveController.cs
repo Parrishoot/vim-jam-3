@@ -6,7 +6,7 @@ public class HealPassiveController : PassiveController
 {
     public override string GetText()
     {
-        return StringUtils.GetShieldText(card.healAmount) + StringUtils.GetCardPostfix(turnCount);
+        return StringUtils.GetHealText(card.healAmount) + StringUtils.GetCardPostfix(turnCount);
     }
 
     public override void Process()

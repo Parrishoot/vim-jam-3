@@ -40,11 +40,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Characters
+    uniqueID: 451746041
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Other
     uniqueID: 1705612355
+    locked: 0
+  - name: Burst
+    uniqueID: 600658531
     locked: 0
   - name: UI
     uniqueID: 357150369

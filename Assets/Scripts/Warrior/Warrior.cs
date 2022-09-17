@@ -10,6 +10,8 @@ public class Warrior : MonoBehaviour
 
     private Animator animator;
 
+    public float lerpSpeed;
+
     public enum TARGET_TYPE
     {
         PLAYER,
@@ -32,6 +34,8 @@ public class Warrior : MonoBehaviour
     private float currentChargeTime;
     private Vector3 startingLocation;
 
+    private Vector3 startingScale;
+
     public void Start()
     {
         animator = GetComponent<Animator>();
@@ -47,17 +51,13 @@ public class Warrior : MonoBehaviour
 
         transform.localScale = new Vector3(Mathf.Sign(target.gameObject.transform.position.x - transform.position.x), transform.localScale.y, transform.localScale.z);
 
-        
+        startingScale = transform.localScale;
+
+        transform.localScale = GetTargetScale();
     }
 
     public void AddDamageModifier(float damageModifier)
     {
-
-        if(damageModifier > 0)
-        {
-            gameObject.transform.localScale = new Vector3(1.5f * (Mathf.Sign(gameObject.transform.localScale.x)), 1.5f, 1);
-        }
-
         combatPower = (int) (combatPower * damageModifier);
     }
 
@@ -69,7 +69,7 @@ public class Warrior : MonoBehaviour
 
                 if(currentChargeTime <= 1f)
                 {
-                    transform.position = Vector3.Lerp(startingLocation, target.gameObject.transform.position, chargeCurve.Evaluate(currentChargeTime));
+                    transform.position = Vector3.Lerp(startingLocation, target.warriorTargetTransform.position, chargeCurve.Evaluate(currentChargeTime));
 
                     currentChargeTime += Time.deltaTime * chargeSpeed;
                 }
@@ -88,7 +88,12 @@ public class Warrior : MonoBehaviour
 
             case WARRIOR_STATE.DESPAWNING:
                 break;
-            
+        }
+
+        Vector3 targetScale = GetTargetScale();
+        if (transform.localScale != targetScale)
+        {
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Mathf.SmoothStep(0f, 1f, Time.deltaTime * lerpSpeed));
         }
     }
 
@@ -96,6 +101,11 @@ public class Warrior : MonoBehaviour
     {
         animator.SetTrigger("charge");
         warriorState = WARRIOR_STATE.CHARGING;
+    }
+
+    public Vector3 GetTargetScale()
+    {
+        return startingScale * (1 + Mathf.Min(combatPower / 15f, 4f));
     }
 
     public bool PendingDespawn()

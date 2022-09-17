@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
+
+    public HealthUIController healthUIController;
+    public Transform warriorTargetTransform;
+
     public int totalHealth = 50;
 
     public bool IsDead()
     {
         return totalHealth <= 0;
+    }
+
+    public void Update()
+    {
+        healthUIController.SetText(totalHealth);
     }
 
     public int Damage(int damage)

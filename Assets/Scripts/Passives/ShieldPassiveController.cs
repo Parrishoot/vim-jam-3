@@ -29,19 +29,33 @@ public class ShieldPassiveController : PassiveController
         return base.Finished() || shield.IsDepleted();
     }
 
+    public override void Despawn()
+    {
+        if(shield != null)
+        {
+            shield.Despawn();
+        }
+        
+        if(passiveUIController != null)
+        {
+            passiveUIController.Despawn();
+        }
+
+        base.Despawn();
+    }
+
     public override void Process()
     {
 
         if (shield == null)
         {
             Transform parent = turnController.healthController.gameObject.transform;
-            GameObject shieldObject = Instantiate(shieldPrefab);
-            shieldObject.transform.SetParent(parent, false);
+            GameObject shieldObject = Instantiate(shieldPrefab, parent:parent);
 
             shield = shieldObject.GetComponent<Shield>();
             shield.shieldAmount = card.shieldAmount;
         }
 
-        turnCount -= 1;
+        base.Process();
     }
 }

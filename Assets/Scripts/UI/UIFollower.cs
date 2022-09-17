@@ -6,9 +6,6 @@ public class UIFollower : MonoBehaviour
 {
     public GameObject parentObject;
 
-    public RectTransform objectRectTransform;
-    public RectTransform parentRectTransform;
-
     public float followSpeed = 40f;
 
     public virtual void Start()

@@ -22,12 +22,12 @@ public static class StringUtils
 
     public static string GetLifeStealText(int stealAmount)
     {
-        return stealAmount <= 0 ? "" : "Steal " + stealAmount.ToString() + " HP from your opponent at the end of your turn";
+        return stealAmount <= 0 ? "" : "Lifesteal " + stealAmount.ToString() + " HP at the end of your turn";
     }
 
     public static string GetHandSizeAdjustAmountText(int handSizeAdjustAmount)
     {
-        return handSizeAdjustAmount == 0 ? "" : "Adjust hand size by " + handSizeAdjustAmount.ToString() + " card" + (Mathf.Abs(handSizeAdjustAmount) > 0 ? "s" : "");
+        return handSizeAdjustAmount == 0 ? "" : "Add " + handSizeAdjustAmount.ToString() + " card" + (Mathf.Abs(handSizeAdjustAmount) > 1 ? "s" : "");
     }
 
     public static string GetCardPostfix(int turnAmount)
@@ -36,14 +36,11 @@ public static class StringUtils
 
         switch (turnAmount)
         {
-            case 1:
-                return postfix + "this turn";
-
             case -1:
                 return postfix + "indefinitely";
 
             default:
-                return postfix + "for " + turnAmount.ToString() + " turns";
+                return postfix + "for " + turnAmount.ToString() + " turn" + (turnAmount == 1 ? "" : "s");
         }
     }
 }
