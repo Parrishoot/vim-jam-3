@@ -234,10 +234,14 @@ public abstract class TurnController : MonoBehaviour
     {
         foreach (PassiveController passiveController in passiveControllers)
         {
-            passiveController.ShowPassive();
             passiveController.Process();
 
-            yield return new WaitForSeconds(1f);
+            if(!passiveController.Finished())
+            {
+                passiveController.ShowPassive();
+            }
+
+            yield return new WaitForSeconds(2f);
 
             passiveController.HidePassive();
         }
@@ -255,6 +259,8 @@ public abstract class TurnController : MonoBehaviour
         }
 
         yield return StartCoroutine(ProcessWarriors(warriorControllers));
+
+        yield return new WaitForSeconds(2f);
 
         yield return StartCoroutine(ProcessControllers(afterPassiveControllers));
 

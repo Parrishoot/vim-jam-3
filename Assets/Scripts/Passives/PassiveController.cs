@@ -96,11 +96,14 @@ public abstract class PassiveController : MonoBehaviour
 
     public void ShowPassive()
     {
-        // TODO: Implement this
+        passiveUIController.SetBorderActive();
     }
 
     public void HidePassive()
     {
-        // TODO: Implement this
+        if(passiveUIController != null)
+        {
+            passiveUIController.SetBorderInactive();
+        }
     }
 }

@@ -3,7 +3,7 @@ guid: d2a98c2cc01527e4684a6d49bae1cc6b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,6 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,7 +143,7 @@ TextureImporter:
       name: PassiveIcons_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -161,7 +164,7 @@ TextureImporter:
       name: PassiveIcons_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
         width: 16
         height: 16
@@ -182,6 +185,27 @@ TextureImporter:
       name: PassiveIcons_3
       rect:
         serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665016397feea5843b5703224eea3d2e
+      internalID: -256253347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PassiveIcons_4
+      rect:
+        serializedVersion: 2
         x: 48
         y: 0
         width: 16
@@ -193,17 +217,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59783a8ce8d31324bba9649155778766
-      internalID: -256253347
+      spriteID: 9a9633663989490428d5249a67dbf9dc
+      internalID: -162354526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PassiveIcons_4
+      name: PassiveIcons_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
         width: 16
         height: 16
@@ -214,8 +238,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ccc1a570caea624cbd5f749b42b1a97
-      internalID: -162354526
+      spriteID: 95a3f1d418a127f4586a95d01614ef86
+      internalID: 1739110044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PassiveIcons_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907835c3463e8a440944f38e0dfa7809
+      internalID: 567904697
       vertices: []
       indices: 
       edges: []
@@ -235,10 +280,11 @@ TextureImporter:
       PassiveIcons_3: -256253347
       PassiveIcons_2: -1026259115
       PassiveIcons_4: -162354526
+      PassiveIcons_5: 1739110044
       PassiveIcons_1: 1333055746
+      PassiveIcons_6: 567904697
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

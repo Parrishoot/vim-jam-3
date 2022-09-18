@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1171190904872742177, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
@@ -31,6 +32,10 @@ PrefabInstance:
       propertyPath: passiveController
       value: 
       objectReference: {fileID: 5438207766350852331}
+    - target: {fileID: 4068197930973774219, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1129808310, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
     - target: {fileID: 4165540217508799684, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_Name
       value: HealPassive
@@ -45,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_AnchorMax.x
@@ -135,6 +140,10 @@ PrefabInstance:
       propertyPath: parentObject
       value: 
       objectReference: {fileID: 3691351302579446117}
+    - target: {fileID: 8552458583521419636, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1129808310, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
     - target: {fileID: 8578147210781447046, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -144,6 +153,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
 --- !u!114 &1818419203318056352 stripped
 MonoBehaviour:

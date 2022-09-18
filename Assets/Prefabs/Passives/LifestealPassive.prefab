@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1425664229559418881, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
@@ -22,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 4068197930973774219, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -256253347, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
+      objectReference: {fileID: -162354526, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
     - target: {fileID: 4165540217508799684, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_Name
       value: LifestealPassive
@@ -37,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4165540217508799685, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_AnchorMax.x
@@ -122,8 +123,9 @@ PrefabInstance:
     - target: {fileID: 8552458583521419636, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -256253347, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
+      objectReference: {fileID: -162354526, guid: d2a98c2cc01527e4684a6d49bae1cc6b, type: 3}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d55ac56aba8c104dbae11647b369f36, type: 3}
 --- !u!1 &1770560043107923004 stripped
 GameObject:

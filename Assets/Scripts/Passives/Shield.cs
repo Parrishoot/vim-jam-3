@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     public float shieldAmount = 0f;
+    public Animator animator;
+    public Shaker shaker;
 
     bool active = true;
 
@@ -22,11 +24,11 @@ public class Shield : MonoBehaviour
         }
 
         shieldAmount -= damage;
+        shaker.SetShake(.05f, .2f, 100f);
 
-        if(shieldAmount <= 0)
+        if (shieldAmount <= 0)
         {
-            Debug.Log("Broke!");
-
+            animator.SetTrigger("break");
             active = false;
             return (int) Mathf.Abs(shieldAmount);
         }
@@ -36,6 +38,6 @@ public class Shield : MonoBehaviour
 
     public void Despawn()
     {
-        Destroy(gameObject);
+        animator.SetTrigger("break");
     }
 }

@@ -16,6 +16,6 @@ public class SacrificeController : MonoBehaviour
     public void Kill()
     {
         particleSystem.Stop();
-        Destroy(gameObject, .5f);
+        Destroy(gameObject, .2f);
     }
 }

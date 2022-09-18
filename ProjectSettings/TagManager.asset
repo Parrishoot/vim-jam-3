@@ -52,6 +52,9 @@ TagManager:
   - name: Other
     uniqueID: 1705612355
     locked: 0
+  - name: Shield
+    uniqueID: 1676279563
+    locked: 0
   - name: Warriors
     uniqueID: 736137125
     locked: 0
@@ -60,4 +63,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 357150369
+    locked: 0
+  - name: Hearticles
+    uniqueID: 4174286757
     locked: 0

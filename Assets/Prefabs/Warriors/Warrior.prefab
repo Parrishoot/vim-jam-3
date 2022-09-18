@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57720663ed7d5584e908a60a0fa1b94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chargeSpeed: 1
+  chargeSpeed: 1.7
   chargeCurve:
     serializedVersion: 2
     m_Curve:
@@ -124,6 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2474848675027113881}
   - component: {fileID: 2498711926110057716}
+  - component: {fileID: 5263319579859758744}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -185,7 +186,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 736137125
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1437803590, guid: 5eea2814f31d6674bb6fabf020205c58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -198,3 +199,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5263319579859758744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494010751583364964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c394b94be760d4283260c9eaf4667d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Warriors

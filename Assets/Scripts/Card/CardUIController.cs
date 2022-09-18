@@ -10,11 +10,19 @@ public class CardUIController : MonoBehaviour
     public Color warriorColor;
     public Color sacrificeColor;
 
+    public float outlineThickness = .115f;
+
     public TextMeshProUGUI titleTMP;
     public TextMeshProUGUI sacrificeTMP;
     public TextMeshProUGUI combatPowerTMP;
 
     public Image backgroundImage;
+
+    public void Start()
+    {
+        Material mat = Instantiate(backgroundImage.material);
+        backgroundImage.material = mat;
+    }
 
     public void SetText(string cardTitle, string sacrificeText, string combatPowerText)
     {
@@ -25,6 +33,8 @@ public class CardUIController : MonoBehaviour
 
     public void SetDestinyColor(CardController.CARD_DESTINY destiny)
     {
-        backgroundImage.color = destiny == CardController.CARD_DESTINY.WARRIOR ? warriorColor : sacrificeColor;
+        Color color = destiny == CardController.CARD_DESTINY.WARRIOR ? warriorColor : sacrificeColor;
+        backgroundImage.material.SetFloat("_OutlineThickness", outlineThickness);
+        backgroundImage.material.SetColor("_OutlineColor", color);
     }
 }

@@ -26,11 +26,12 @@ public class ShieldPassiveController : PassiveController
 
     public override bool Finished()
     {
-        return base.Finished() || shield.IsDepleted();
+        return base.Finished() || shield == null || shield.IsDepleted();
     }
 
     public override void Despawn()
     {
+
         if(shield != null)
         {
             shield.Despawn();
@@ -49,7 +50,7 @@ public class ShieldPassiveController : PassiveController
 
         if (shield == null)
         {
-            Transform parent = turnController.healthController.gameObject.transform;
+            Transform parent = turnController.healthController.warriorTargetTransform;
             GameObject shieldObject = Instantiate(shieldPrefab, parent:parent);
 
             shield = shieldObject.GetComponent<Shield>();

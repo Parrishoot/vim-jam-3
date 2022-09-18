@@ -128,6 +128,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1900492966}
     m_Modifications:
     - target: {fileID: 2101141703878040244, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
@@ -239,6 +240,7 @@ PrefabInstance:
       value: 0.9433962
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
 --- !u!4 &66239460 stripped
 Transform:
@@ -309,10 +311,11 @@ MonoBehaviour:
   m_Intensity: 1.64
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: a58fe02b
+  m_ApplyToSortingLayers: a58fe02b0bffe963
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -612,7 +615,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 2.8125
+  orthographic size: 3.03125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -661,6 +664,7 @@ MonoBehaviour:
   m_RefResolutionY: 360
   m_CropFrame: 0
   m_GridSnapping: 0
+  m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
@@ -727,10 +731,11 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 6352cd23a1ae4915
+  m_ApplyToSortingLayers: 6352cd23a1ae4915a58fcef8
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -1074,7 +1079,7 @@ MonoBehaviour:
     m_Top: 10
     m_Bottom: 10
   m_ChildAlignment: 6
-  m_Spacing: 15
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1157,10 +1162,11 @@ MonoBehaviour:
   m_Intensity: 2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000f918ed1a
+  m_ApplyToSortingLayers: 00000000f918ed1a0bffe963
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -1670,6 +1676,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 357150369
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1703,6 +1710,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1568860375}
     m_Modifications:
     - target: {fileID: 1112419141325184988, guid: 99ddce25e9c48f34789ff5a0184492de, type: 3}
@@ -1798,6 +1806,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ddce25e9c48f34789ff5a0184492de, type: 3}
 --- !u!224 &1582029091 stripped
 RectTransform:
@@ -1991,7 +2000,7 @@ MonoBehaviour:
     m_Top: 10
     m_Bottom: 10
   m_ChildAlignment: 6
-  m_Spacing: 15
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -2066,10 +2075,11 @@ MonoBehaviour:
   m_Intensity: 2.75
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000f918ed1a
+  m_ApplyToSortingLayers: 00000000f918ed1a0bffe963
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -2469,7 +2479,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 96
 --- !u!114 &1977007760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,6 +2521,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 357150369
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2583,10 +2594,11 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000017b854c3a58fe02b
+  m_ApplyToSortingLayers: 0000000017b854c3a58fe02b0bffe963
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -2724,6 +2736,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1408806405031635948, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
@@ -3014,6 +3027,46 @@ PrefabInstance:
       propertyPath: m_Vertices.Array.data[8].position.y
       value: -0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988306, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.441869
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988306, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.291092
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988306, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988306, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.2916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548302923916988307, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 357150369
+      objectReference: {fileID: 0}
     - target: {fileID: 2548302923916988316, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
       propertyPath: sacrificePrefab
       value: 
@@ -3075,12 +3128,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 51bcdc8207ed33843a9878ccd1642c15, type: 3}
 --- !u!1001 &3981980606386957792
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1568860375}
     m_Modifications:
     - target: {fileID: 3981980606007258808, guid: 718631f4ba8f922498852c93830cc902, type: 3}
@@ -3220,12 +3275,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 07e54baf81e092046bd7e494db57a256, type: 2}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 718631f4ba8f922498852c93830cc902, type: 3}
 --- !u!1001 &4691037308074848854
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1900492966}
     m_Modifications:
     - target: {fileID: 2101141703878040244, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
@@ -3333,6 +3390,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 539ef3f3ee6a21f4abe541024dc68e4b, type: 3}
 --- !u!4 &4691037308074848855 stripped
 Transform:
@@ -3355,6 +3413,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1568860375}
     m_Modifications:
     - target: {fileID: 8610130748757905858, guid: f77f284c0d4afec448e2655c091d5c54, type: 3}
@@ -3446,4 +3505,5 @@ PrefabInstance:
       value: HealthUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f77f284c0d4afec448e2655c091d5c54, type: 3}

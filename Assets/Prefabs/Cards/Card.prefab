@@ -34,7 +34,7 @@ RectTransform:
   m_Children:
   - {fileID: 5820454304742053193}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -81,8 +81,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d523489f9a0f2cc46b1cb211b8bfd413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriorColor: {r: 1, g: 0, b: 0, a: 1}
-  sacrificeColor: {r: 0, g: 0.12997723, b: 1, a: 1}
+  warriorColor: {r: 0, g: 0.58431375, b: 0.9137255, a: 1}
+  sacrificeColor: {r: 1, g: 0, b: 0.26666668, a: 1}
+  outlineThickness: 0.115
   titleTMP: {fileID: 1132397669228617811}
   sacrificeTMP: {fileID: 5254255085573013617}
   combatPowerTMP: {fileID: 5430821716873288626}
@@ -137,7 +138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchoredPosition: {x: -0.12348938, y: 41.4}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6733480498063513164
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -420,9 +421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
-  m_RaycastTarget: 0
+  m_Material: {fileID: 2100000, guid: 055a23c841a85bd408c72ecd5c1b1328, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -567,7 +568,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 9.304832, y: 6.203224, z: 8.418652, w: 6.64629}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -644,8 +645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.1235, y: -21.2999}
-  m_SizeDelta: {x: 124.0992, y: 25.0001}
+  m_AnchoredPosition: {x: -0.1235, y: -33.76}
+  m_SizeDelta: {x: 100.6, y: 25.0001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7821237913977291391
 CanvasRenderer:

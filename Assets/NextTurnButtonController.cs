@@ -35,6 +35,5 @@ public class NextTurnButtonController : MonoBehaviour
     public void ActivateButton()
     {
         animator.SetTrigger("flyIn");
-        EnableButton();
     }
 }
