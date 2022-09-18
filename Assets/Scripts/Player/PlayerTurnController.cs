@@ -5,29 +5,31 @@ using UnityEngine;
 public class PlayerTurnController : TurnController
 {
     
-    private PlayerTurnUIController playerTurnUIController;
-
-    public void Start()
-    {
-        playerTurnUIController = GetComponent<PlayerTurnUIController>();
-    }
+    public NextTurnButtonController nextTurnButtonController;
 
     public override void Update()
     {
         base.Update();
 
-        int pendingCards = GetNumberOfPendingCards();
-
-        if(pendingCards == 0)
+        if(turnState == TURN_STATE.ACTIVE)
         {
-            playerTurnUIController.EnableButton();
-        }
-        else
-        {
-            playerTurnUIController.DisableButton();
-        }
+            int pendingCards = GetNumberOfPendingCards();
 
-        playerTurnUIController.SetText(pendingCards.ToString());
+            string buttonString;
+
+            if (pendingCards == 0)
+            {
+                nextTurnButtonController.EnableButton();
+                buttonString = "Continue";
+            }
+            else
+            {
+                nextTurnButtonController.DisableButton();
+                buttonString = "Select " + pendingCards.ToString() + " more card" + (pendingCards > 1 ? "s" : "");
+            }
+
+            nextTurnButtonController.SetText(buttonString);
+        }
     }
 
     public override IEnumerator DealCards()
@@ -35,7 +37,7 @@ public class PlayerTurnController : TurnController
         // base.DealCards() wasnt working so looks like we're copying...
         yield return StartCoroutine(base.DealCards());
 
-        playerTurnUIController.ActivateButton();
+        nextTurnButtonController.ActivateButton();
     }
 
     public int GetNumberOfPendingCards()
@@ -45,7 +47,7 @@ public class PlayerTurnController : TurnController
 
     public override void ProcessTurn()
     {
-        playerTurnUIController.DeactivateButton();
+        nextTurnButtonController.DeactivateButton();
 
         base.ProcessTurn();
     }

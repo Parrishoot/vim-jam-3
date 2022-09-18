@@ -37,6 +37,11 @@ public class HealthController : MonoBehaviour
             gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
         }
 
+        if(IsDead())
+        {
+            GameController.GetInstance().CheckForGameOver();
+        }
+
         return remainingDamage;
     }
 

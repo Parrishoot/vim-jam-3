@@ -144,16 +144,38 @@ public abstract class TurnController : MonoBehaviour
             }
 
             sacrificeController.Despawn();
+            warriorSpawner.SpawnSacrifice();
 
             yield return new WaitForSeconds(.25f);
         }
 
         yield return new WaitForSeconds(1f);
 
-        fireAnimator.SetTrigger("burst");
-        CameraManager.GetInstance().ScreenShake(.05f, 1f, 500f);
+        AltarController.GetInstance().BeginGlow();
+
+        SacrificeController[] sacrifices = GameObject.FindObjectsOfType<SacrificeController>();
+
+        yield return new WaitForSeconds(1f);
+
+        foreach (SacrificeController sacrificeController in sacrifices) {
+            sacrificeController.Shrug();
+        }
 
         yield return new WaitForSeconds(2f);
+
+        fireAnimator.SetTrigger("burst");
+        CameraManager.GetInstance().ScreenShake(.05f, .5f, 500f);
+
+        foreach (SacrificeController sacrificeController in sacrifices)
+        {
+            sacrificeController.Kill();
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        AltarController.GetInstance().EndGlow();
+
+        yield return new WaitForSeconds(1f);
     }
 
     public IEnumerator ProcessWarriors(List<CardController> warriorControllers)

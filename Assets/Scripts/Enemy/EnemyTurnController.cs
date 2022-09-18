@@ -5,8 +5,14 @@ using UnityEngine;
 public class EnemyTurnController : TurnController
 {
 
+    public NextTurnButtonController nextTurnButtonController;
+
     public override IEnumerator DealCards()
     {
+        nextTurnButtonController.SetText("Enemy Turn Processing...");
+        nextTurnButtonController.DisableButton();
+        nextTurnButtonController.ActivateButton();
+
         yield return base.DealCards();
 
         foreach (CardController card in currentHand)
@@ -15,6 +21,8 @@ public class EnemyTurnController : TurnController
 
             yield return new WaitForSeconds(.5f);
         }
+
+        nextTurnButtonController.DeactivateButton();
 
         ProcessTurn();
     }
