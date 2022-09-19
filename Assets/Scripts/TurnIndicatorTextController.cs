@@ -7,19 +7,15 @@ public class TurnIndicatorTextController : Singleton<TurnIndicatorTextController
 {
     public TextMeshProUGUI text;
 
-    private Animator animator;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    public Animator animator;
 
     public void PopInText(string newText)
     {
+        Debug.Log("Setting text!");
         text.text = newText;
+        Debug.Log("Popping In!");
         animator.SetTrigger("popIn");
+        Debug.Log("All Done!");
     }
 
     public void PopInAndStayText(string newText)

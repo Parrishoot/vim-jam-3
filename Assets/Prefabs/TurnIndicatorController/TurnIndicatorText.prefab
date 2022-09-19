@@ -170,3 +170,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 3709944083084134830}
+  animator: {fileID: 3709944083084134828}

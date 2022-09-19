@@ -63,13 +63,17 @@ public abstract class TurnController : MonoBehaviour
 
     public virtual void StartTurn()
     {
+        Debug.Log("Starting Pre Turn");
         StartCoroutine(PreTurn());
     }
 
     private IEnumerator PreTurn()
     {
 
+        Debug.Log("Getting text controller");
         TurnIndicatorTextController.GetInstance().PopInText(warriorTargetType == Warrior.TARGET_TYPE.ENEMY ? "YOUR TURN" : "DEMON'S TURN");
+
+        Debug.Log("Popping in text");
 
         yield return new WaitForSeconds(3f);
 

@@ -107,6 +107,7 @@ MonoBehaviour:
   audioSource: {fileID: 1241297266906871302}
   playerDraggableCard: {fileID: 2593915109691097121}
   interactable: 0
+  mainMenu: 0
   combatPower: 0
 --- !u!82 &1241297266906871302
 AudioSource:
@@ -119,8 +120,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 432b55933a2fe8542bc8b00e5cc9959a, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.712
+  m_PlayOnAwake: 0
+  m_Volume: 0.566
   m_Pitch: 1
   Loop: 0
   Mute: 0

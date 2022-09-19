@@ -11,8 +11,6 @@ public class GameController : Singleton<GameController>
     public TurnController playerTurnController;
     public TurnController enemyTurnController;
 
-    public GameObject GameOverUI;
-
     public enum GAME_STATE
     {
         MAIN_MENU,
@@ -26,7 +24,7 @@ public class GameController : Singleton<GameController>
 
     public void Start()
     {
-
+        Debug.Log("Starting Turn");
         gameState = GAME_STATE.IN_PROGRESS;
 
         activeTurnController = playerTurnController;
