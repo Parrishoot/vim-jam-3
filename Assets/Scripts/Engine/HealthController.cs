@@ -52,8 +52,10 @@ public class HealthController : MonoBehaviour
                 StartCoroutine(Die());
             }
 
-            AudioUtils.PlaySoundWithRandomPitch(oofAudioSource, .05f, 1f);
-
+            if(!IsDead())
+            {
+                AudioUtils.PlaySoundWithRandomPitch(oofAudioSource, .05f, 1f);
+            }
         }
 
         if(IsDead())

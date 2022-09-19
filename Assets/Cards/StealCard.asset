@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69427dfab22daac43b12b21a52340a82, type: 3}
   m_Name: StealCard
   m_EditorClassIdentifier: 
-  title: LifeStea
+  title: LifeSteal
   combatPowerBounds: {x: 1, y: 3}
   turnAmount: 6
   damageModifier: 1

@@ -259,6 +259,8 @@ public abstract class TurnController : MonoBehaviour
         List<CardController> sacrificeControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.SACRIFICE);
         List<CardController> warriorControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.WARRIOR);
 
+        currentHand.ForEach(card => card.interactable = false); 
+
         if(sacrificeControllers.Count > 0)
         {
             TurnIndicatorTextController.GetInstance().PopInText("SACRIFICE");
