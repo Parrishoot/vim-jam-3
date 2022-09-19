@@ -9,10 +9,12 @@ public class PassiveUIController: UIFollower
 {
     public TextMeshProUGUI passiveText;
     public Animator animator;
+    public AudioSource audioSource;
 
     public void SetBorderActive()
     {
         animator.SetTrigger("passiveActive");
+        AudioUtils.PlaySoundWithRandomPitch(audioSource, .2f, 1f);
     }
 
     public void SetBorderInactive()

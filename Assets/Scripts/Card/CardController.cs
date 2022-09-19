@@ -10,7 +10,12 @@ public class CardController : MonoBehaviour
         SACRIFICE
     }
 
+    public AudioClip warriorDestinyClip;
+    public AudioClip sacrificeDestinyClip;
+
     public Card card;
+
+    public AudioSource audioSource;
 
     public PlayerDraggableCard playerDraggableCard;
 
@@ -18,25 +23,34 @@ public class CardController : MonoBehaviour
 
     private CardUIController cardUIController;
 
+    public bool interactable;
+
+    public bool mainMenu = false;
+
     public int combatPower;
 
     public void Start()
     {
         cardUIController = GetComponent<CardUIController>();
 
-        combatPower = (int) Random.Range(card.combatPowerBounds.x, card.combatPowerBounds.y);
+        if (!mainMenu)
+        {
+            
 
-        cardUIController.SetText(card.title, card.ToString(), combatPower.ToString());
-    }
+            combatPower = (int)Random.Range(card.combatPowerBounds.x, card.combatPowerBounds.y);
 
-    public void Update()
-    {
-        
+            cardUIController.SetText(card.title, card.ToString(), combatPower.ToString());
+
+            audioSource.Play();
+        }
     }
 
     public void SetDestiny(CARD_DESTINY newDestiny)
     {
         destiny = newDestiny;
+
+        audioSource.clip = newDestiny == CARD_DESTINY.SACRIFICE ? sacrificeDestinyClip : warriorDestinyClip;
+        AudioUtils.PlaySoundWithRandomPitch(audioSource, .05f, 1f);
 
         cardUIController.SetDestinyColor(newDestiny);
     }

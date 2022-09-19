@@ -68,6 +68,11 @@ public abstract class TurnController : MonoBehaviour
 
     private IEnumerator PreTurn()
     {
+
+        TurnIndicatorTextController.GetInstance().PopInText(warriorTargetType == Warrior.TARGET_TYPE.ENEMY ? "YOUR TURN" : "DEMON'S TURN");
+
+        yield return new WaitForSeconds(3f);
+
         yield return StartCoroutine(ProcessControllers(beforePassiveControllers));
 
         yield return StartCoroutine(DealCards());
@@ -83,8 +88,10 @@ public abstract class TurnController : MonoBehaviour
     public void DealCard()
     {
         GameObject newCard = CardListController.GetInstance().GetRandomCardObject();
+        CardController newCardController = newCard.GetComponent<CardController>();
+        newCardController.interactable = warriorTargetType == Warrior.TARGET_TYPE.ENEMY;
 
-        currentHand.Add(newCard.GetComponent<CardController>());
+        currentHand.Add(newCardController);
         newCard.transform.SetParent(cardSpawnTransform, false);
     }
 
@@ -163,7 +170,7 @@ public abstract class TurnController : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        fireAnimator.SetTrigger("burst");
+        FireballController.GetInstance().Burst();
         CameraManager.GetInstance().ScreenShake(.05f, .5f, 500f);
 
         foreach (SacrificeController sacrificeController in sacrifices)
@@ -252,15 +259,22 @@ public abstract class TurnController : MonoBehaviour
         List<CardController> sacrificeControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.SACRIFICE);
         List<CardController> warriorControllers = currentHand.FindAll(card => card.GetDestiny() == CardController.CARD_DESTINY.WARRIOR);
 
-        // TODO: ADD THE PASSIVES HERE
         if(sacrificeControllers.Count > 0)
         {
+            TurnIndicatorTextController.GetInstance().PopInText("SACRIFICE");
+
+            yield return new WaitForSeconds(3f);
+
             yield return StartCoroutine(ProcessSacrifices(sacrificeControllers));
         }
 
+        TurnIndicatorTextController.GetInstance().PopInText("ATTACK");
+
+        yield return new WaitForSeconds(4f);
+
         yield return StartCoroutine(ProcessWarriors(warriorControllers));
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         yield return StartCoroutine(ProcessControllers(afterPassiveControllers));
 

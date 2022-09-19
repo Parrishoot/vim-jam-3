@@ -7,8 +7,15 @@ public class HealthController : MonoBehaviour
 
     public HealthUIController healthUIController;
     public Transform warriorTargetTransform;
+    public AudioSource oofAudioSource;
+    public AudioSource hitAudioSource;
 
     public int totalHealth = 50;
+
+    public void Start()
+    {
+
+    }
 
     public bool IsDead()
     {
@@ -36,6 +43,8 @@ public class HealthController : MonoBehaviour
 
             healthUIController.PlayHurtParticles();
             gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
+            AudioUtils.PlaySoundWithRandomPitch(oofAudioSource, .05f, 1f);
+            AudioUtils.PlaySoundWithRandomPitch(hitAudioSource, .05f, 1f);
         }
 
         if(IsDead())

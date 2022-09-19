@@ -8,7 +8,17 @@ public class Shield : MonoBehaviour
     public Animator animator;
     public Shaker shaker;
 
+    public AudioSource audioSource;
+
+    public AudioClip breakClip;
+    public AudioClip hitClip;
+
     bool active = true;
+
+    public void Start()
+    {
+        audioSource.Play();
+    }
 
     public bool IsDepleted()
     {
@@ -29,8 +39,15 @@ public class Shield : MonoBehaviour
         if (shieldAmount <= 0)
         {
             animator.SetTrigger("break");
+            audioSource.clip = breakClip;
+            audioSource.Play();
             active = false;
             return (int) Mathf.Abs(shieldAmount);
+        }
+        else
+        {
+            audioSource.clip = hitClip;
+            audioSource.Play();
         }
 
         return 0;

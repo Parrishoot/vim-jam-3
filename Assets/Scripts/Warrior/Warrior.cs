@@ -9,6 +9,10 @@ public class Warrior : MonoBehaviour
     public AnimationCurve chargeCurve;
 
     private Animator animator;
+    private AudioSource audioSource;
+
+    public AudioClip spawnAudio;
+    public AudioClip punchAudio;
 
     public float lerpSpeed;
 
@@ -39,6 +43,10 @@ public class Warrior : MonoBehaviour
     public void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
+        audioSource.clip = spawnAudio;
+        AudioUtils.PlaySoundWithRandomPitch(audioSource, .05f, 1);
     }
 
     public void Init(int combatPower, TARGET_TYPE targetType)
@@ -81,7 +89,9 @@ public class Warrior : MonoBehaviour
 
             case WARRIOR_STATE.ATTACKING:
                 target.Damage(combatPower);
+                
                 animator.SetTrigger("punch");
+
                 GetComponent<Shaker>().SetShake(.05f, .2f, 500);
                 warriorState = WARRIOR_STATE.DESPAWNING;
                 break;

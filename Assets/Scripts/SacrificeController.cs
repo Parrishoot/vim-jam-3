@@ -6,6 +6,12 @@ public class SacrificeController : MonoBehaviour
 {
     public ParticleSystem particleSystem;
     public Animator animator;
+    public AudioSource audioSource;
+
+    public void Start()
+    {
+        AudioUtils.PlaySoundWithRandomPitch(audioSource, .05f, 1);
+    }
 
     public void Shrug()
     {

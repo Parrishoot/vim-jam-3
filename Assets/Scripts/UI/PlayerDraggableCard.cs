@@ -9,11 +9,11 @@ public class PlayerDraggableCard : DraggableElement, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Right)
+        if (eventData.button == PointerEventData.InputButton.Right && cardController.interactable)
         {
             cardController.SetDestiny(CardController.CARD_DESTINY.SACRIFICE);
         }
-        else if (eventData.button == PointerEventData.InputButton.Left)
+        else if (eventData.button == PointerEventData.InputButton.Left && cardController.interactable)
         {
             cardController.SetDestiny(CardController.CARD_DESTINY.WARRIOR);
         }
