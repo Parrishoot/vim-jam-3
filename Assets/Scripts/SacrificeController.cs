@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SacrificeController : MonoBehaviour
 {
-    public ParticleSystem particleSystem;
+    public new ParticleSystem particleSystem;
     public Animator animator;
     public AudioSource audioSource;
 

@@ -21,6 +21,7 @@ public class HealthUIController : MonoBehaviour
 
     public void SetText(int health)
     {
-        healthText.SetText(health.ToString());
+        string healthString = health <= 0 ? "" : health.ToString();
+        healthText.SetText(healthString);
     }
 }

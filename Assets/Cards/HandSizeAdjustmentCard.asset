@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69427dfab22daac43b12b21a52340a82, type: 3}
   m_Name: HandSizeAdjustmentCard
   m_EditorClassIdentifier: 
-  title: INCREASE HAND SIZE
+  title: Hand Size
   combatPowerBounds: {x: 5, y: 10}
   turnAmount: 2
   damageModifier: 1

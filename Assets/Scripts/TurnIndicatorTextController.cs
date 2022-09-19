@@ -21,4 +21,10 @@ public class TurnIndicatorTextController : Singleton<TurnIndicatorTextController
         text.text = newText;
         animator.SetTrigger("popIn");
     }
+
+    public void PopInAndStayText(string newText)
+    {
+        text.text = newText;
+        animator.SetTrigger("popInAndStay");
+    }
 }

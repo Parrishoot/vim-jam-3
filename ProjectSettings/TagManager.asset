@@ -67,6 +67,12 @@ TagManager:
   - name: UI
     uniqueID: 357150369
     locked: 0
+  - name: CardCanvas
+    uniqueID: 1615434501
+    locked: 0
   - name: Hearticles
     uniqueID: 4174286757
+    locked: 0
+  - name: Fade
+    uniqueID: 2106834259
     locked: 0

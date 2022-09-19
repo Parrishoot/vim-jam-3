@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69427dfab22daac43b12b21a52340a82, type: 3}
   m_Name: DamageModifierObject
   m_EditorClassIdentifier: 
-  title: Double Damage
+  title: Damage
   combatPowerBounds: {x: 3, y: 15}
   turnAmount: 2
   damageModifier: 2

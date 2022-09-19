@@ -12,10 +12,7 @@ public class HealthController : MonoBehaviour
 
     public int totalHealth = 50;
 
-    public void Start()
-    {
-
-    }
+    public float fadeOutSpeed = .1f;
 
     public bool IsDead()
     {
@@ -41,10 +38,22 @@ public class HealthController : MonoBehaviour
         {
             totalHealth -= remainingDamage;
 
-            healthUIController.PlayHurtParticles();
-            gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
+            if (totalHealth > 0)
+            {
+                healthUIController.PlayHurtParticles();
+                gameObject.GetComponent<Shaker>().SetShake(.05f, .2f, 100f);
+                AudioUtils.PlaySoundWithRandomPitch(hitAudioSource, .05f, 1f);
+            }
+            else
+            {
+                gameObject.GetComponent<Shaker>().SetShake(.1f, 2f, 100f);
+                GetComponentInChildren<Animator>().SetTrigger("die");
+
+                StartCoroutine(Die());
+            }
+
             AudioUtils.PlaySoundWithRandomPitch(oofAudioSource, .05f, 1f);
-            AudioUtils.PlaySoundWithRandomPitch(hitAudioSource, .05f, 1f);
+
         }
 
         if(IsDead())
@@ -53,6 +62,23 @@ public class HealthController : MonoBehaviour
         }
 
         return remainingDamage;
+    }
+
+    public IEnumerator Die()
+    {
+        gameObject.GetComponent<Shaker>().SetShake(.1f, 2f, 100f);
+        GetComponentInChildren<Animator>().SetTrigger("die");
+
+        hitAudioSource.loop = true;
+        hitAudioSource.Play();
+
+        while (hitAudioSource.volume >= 0)
+        {
+            hitAudioSource.volume -= Mathf.Max(Time.deltaTime * fadeOutSpeed);
+            yield return null;
+        }
+
+        hitAudioSource.Stop();
     }
 
     public void Heal(int healAmount)

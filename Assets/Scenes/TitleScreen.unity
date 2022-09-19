@@ -976,7 +976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254255085573013617, guid: 4130a998f0ad0e44f934369a32ac9a34, type: 3}
       propertyPath: m_text
-      value: Right Click me to sacrifice me and get this passive ability
+      value: Right Click me to sacrifice me and get this passive ability...
       objectReference: {fileID: 0}
     - target: {fileID: 6970629541711908058, guid: 4130a998f0ad0e44f934369a32ac9a34, type: 3}
       propertyPath: m_Enabled
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Or Left Click me to have me attack with this combat power
+  m_text: ...or Left Click me to have me attack with this combat power
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48e3b2223cf2c5a438f14a4bd03417f3, type: 2}
   m_sharedMaterial: {fileID: -7169979146045229156, guid: 48e3b2223cf2c5a438f14a4bd03417f3, type: 2}
@@ -2199,7 +2199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911044732696881865, guid: 157d57738824f9044b039362cd88c976, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 90
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3911044732696881865, guid: 157d57738824f9044b039362cd88c976, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

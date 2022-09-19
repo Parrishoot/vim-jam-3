@@ -138,6 +138,7 @@ MonoBehaviour:
   oofAudioSource: {fileID: 8264491358068510937}
   hitAudioSource: {fileID: 4292859863666763078}
   totalHealth: 50
+  fadeOutSpeed: 0.5
 --- !u!114 &1560998219468928147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,7 +414,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 451746041
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -867032846, guid: 25234222dac33e54cb7477218f8fafe9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

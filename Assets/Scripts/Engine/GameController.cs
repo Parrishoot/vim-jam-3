@@ -13,8 +13,6 @@ public class GameController : Singleton<GameController>
 
     public GameObject GameOverUI;
 
-    private GameUIController uiController;
-
     public enum GAME_STATE
     {
         MAIN_MENU,
@@ -28,7 +26,6 @@ public class GameController : Singleton<GameController>
 
     public void Start()
     {
-        uiController = GameOverUI.GetComponent<GameUIController>();
 
         gameState = GAME_STATE.IN_PROGRESS;
 
@@ -63,15 +60,15 @@ public class GameController : Singleton<GameController>
         {
             if (playerTurnController.healthController.IsDead())
             {
-                uiController.SetText("GAME OVER!");
-                GameOverUI.SetActive(true);
                 gameState = GAME_STATE.GAME_OVER;
+                TurnIndicatorTextController.GetInstance().PopInAndStayText("YOU LOSE!");
+                RestartGameController.GetInstance().ShowRestartGamePrompt();
             }
             else if (enemyTurnController.healthController.IsDead())
             {
-                uiController.SetText("YOU WIN!");
-                GameOverUI.SetActive(true);
                 gameState = GAME_STATE.GAME_OVER;
+                TurnIndicatorTextController.GetInstance().PopInAndStayText("YOU WIN!");
+                RestartGameController.GetInstance().ShowRestartGamePrompt();
             }
         }
     }
