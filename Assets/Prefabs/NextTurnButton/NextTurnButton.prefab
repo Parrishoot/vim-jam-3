@@ -170,7 +170,7 @@ RectTransform:
   m_Children:
   - {fileID: 3981980606007258811}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -244,8 +244,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 5dec78d6bca6d3148989fc9f6f029aa9, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 57f29f46843f3e74097cf33e998ef0f1, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: b7c445a8cc7b5fa4ababcb5666976a7c, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: b7c445a8cc7b5fa4ababcb5666976a7c, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 57f29f46843f3e74097cf33e998ef0f1, type: 3}
     m_DisabledSprite: {fileID: 21300000, guid: 57f29f46843f3e74097cf33e998ef0f1, type: 3}
   m_AnimationTriggers:
